@@ -36,7 +36,7 @@ export function Navigation() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+          : "bg-black/20 backdrop-blur-sm"
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,13 +65,13 @@ export function Navigation() {
                 </div>
               </div>
             ) : (
-              // When transparent - show full logo image with matching background
-              <div className="relative w-64 h-16 px-4 py-2 bg-black/40 backdrop-blur-sm rounded-lg">
+              // When transparent - show full logo image (no background)
+              <div className="relative w-64 h-16">
                 <Image
                   src="/images/logo-black-bg.png"
                   alt="Healthy Corner Logo"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left"
                   priority
                 />
               </div>

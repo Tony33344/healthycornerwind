@@ -10,14 +10,14 @@ export function Hero() {
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/60 z-10" />
-        {/* Enhanced gradient placeholder - replace with actual Alpine image */}
-        <div className="w-full h-full bg-gradient-to-br from-neutral-800 via-neutral-900 to-black relative overflow-hidden">
-          {/* Animated overlay pattern */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_rgba(164,184,44,0.1),transparent_50%)]" />
-            <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-black/70 z-10" />
+        {/* Pure black background with subtle accent glow */}
+        <div className="w-full h-full bg-black relative overflow-hidden">
+          {/* Subtle animated overlay pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_rgba(164,184,44,0.15),transparent_50%)]" />
+            <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
           </div>
         </div>
       </div>
