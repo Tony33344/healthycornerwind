@@ -46,7 +46,7 @@ export function Navigation() {
             {scrolled ? (
               // When scrolled - show icon + text
               <div className="flex items-center space-x-3">
-                <div className="relative w-12 h-12">
+                <div className="relative w-14 h-14">
                   <Image
                     src="/images/logo.png"
                     alt="Healthy Corner Logo"
@@ -65,13 +65,13 @@ export function Navigation() {
                 </div>
               </div>
             ) : (
-              // When transparent - show full logo image
-              <div className="relative w-48 h-12">
+              // When transparent - show full logo image with matching background
+              <div className="relative w-64 h-16 px-4 py-2 bg-black/40 backdrop-blur-sm rounded-lg">
                 <Image
                   src="/images/logo-black-bg.png"
                   alt="Healthy Corner Logo"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain"
                   priority
                 />
               </div>
