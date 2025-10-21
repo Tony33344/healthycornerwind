@@ -141,9 +141,12 @@ export function Schedule() {
                         <Users size={16} className="mr-2" />
                         {classItem.spots} spots
                       </div>
-                      <button className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-colors opacity-0 group-hover:opacity-100">
+                      <a 
+                        href="#booking"
+                        className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-colors opacity-0 group-hover:opacity-100"
+                      >
                         Book
-                      </button>
+                      </a>
                     </div>
                   </motion.div>
                 ))}

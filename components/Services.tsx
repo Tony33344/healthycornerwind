@@ -110,9 +110,12 @@ export function Services() {
                 </ul>
 
                 {/* CTA */}
-                <button className="mt-6 w-full py-3 border-2 border-neutral-200 rounded-full font-semibold text-neutral-700 hover:border-primary hover:text-primary transition-colors">
-                  Learn More
-                </button>
+                <a 
+                  href="#booking"
+                  className="mt-6 w-full py-3 border-2 border-neutral-200 rounded-full font-semibold text-neutral-700 hover:border-primary hover:text-primary transition-colors block text-center"
+                >
+                  Book Now
+                </a>
               </div>
             </motion.div>
           ))}

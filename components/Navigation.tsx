@@ -93,6 +93,7 @@ export function Navigation() {
             ))}
             <button
               onClick={() => setLanguage(language === "en" ? "sl" : "en")}
+              aria-label={`Switch to ${language === "en" ? "Slovenian" : "English"}`}
               className={`px-4 py-2 text-sm font-medium border rounded-full hover:border-primary hover:text-primary transition-colors ${
                 scrolled 
                   ? "border-neutral-300 text-neutral-700" 
@@ -112,6 +113,8 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
             className={`lg:hidden p-2 transition-colors ${
               scrolled ? "text-neutral-700" : "text-white"
             }`}
@@ -144,6 +147,7 @@ export function Navigation() {
               <div className="flex items-center space-x-4 pt-4">
                 <button
                   onClick={() => setLanguage(language === "en" ? "sl" : "en")}
+                  aria-label={`Switch to ${language === "en" ? "Slovenian" : "English"}`}
                   className="px-4 py-2 text-sm font-medium border border-neutral-300 rounded-full"
                 >
                   {language === "en" ? "SL" : "EN"}

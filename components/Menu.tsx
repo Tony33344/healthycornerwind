@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Leaf, Droplet, Apple, Coffee } from "lucide-react";
+import { Leaf, Droplet, Apple, Coffee, Utensils } from "lucide-react";
 import { useState } from "react";
 
 const menuCategories = [
@@ -37,8 +37,6 @@ const menuItems = {
     { name: "Herbal Tea Selection", description: "Organic herbal teas from local sources", price: "€4", tags: ["Vegan"] },
   ],
 };
-
-import { Utensils } from "lucide-react";
 
 export function Menu() {
   const [activeCategory, setActiveCategory] = useState("breakfast");
