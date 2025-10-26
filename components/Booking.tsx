@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { Calendar, Clock, Users, Mail, Phone, User } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 interface BookingFormData {
   name: string;
@@ -39,15 +40,35 @@ export function Booking() {
   const onSubmit = async (data: BookingFormData) => {
     setIsSubmitting(true);
     
-    // Simulate API call - replace with actual Supabase integration
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log("Booking data:", data);
-    setSubmitSuccess(true);
-    setIsSubmitting(false);
-    reset();
-    
-    setTimeout(() => setSubmitSuccess(false), 5000);
+    try {
+      const { error } = await supabase
+        .from('bookings')
+        .insert([{
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          service: data.service,
+          date: data.date,
+          time: data.time,
+          guests: data.guests,
+          message: data.message || null,
+        }]);
+      
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
+      }
+      
+      console.log('Booking submitted successfully!');
+      setSubmitSuccess(true);
+      reset();
+      setTimeout(() => setSubmitSuccess(false), 5000);
+    } catch (error) {
+      console.error('Error submitting booking:', error);
+      alert('Failed to submit booking. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
