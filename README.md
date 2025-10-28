@@ -1,6 +1,37 @@
-# Healthy Corner - Alpine Health Camp Website
+# Healthy Corner - Wellness Retreat Website
 
-A modern, wellness-focused website for Healthy Corner, a health and wellness retreat in Camp Menina, Slovenia. The site features healthy food offerings, yoga classes, Wim Hof method training, and ice bath experiences.
+A modern, full-featured wellness retreat website with admin CMS, e-commerce, and media management. Built with Next.js 14, TypeScript, Tailwind CSS, and Supabase.
+
+## 🚀 New Features
+- ✅ **Admin CMS** - Full content management system
+- ✅ **Media Manager** - Upload and manage gallery images
+- ✅ **E-Commerce** - Product catalog with shopping cart
+- ✅ **Order Management** - Track and manage orders
+- ✅ **Real Images** - Gallery with actual ice bath & food photos
+- ✅ **Testing Suite** - Playwright end-to-end tests
+
+## ⚡ Quick Start
+
+**IMPORTANT**: You need Supabase credentials to run this app.
+
+### Option 1: Automated Setup
+```bash
+./setup.sh
+```
+
+### Option 2: Manual Setup
+See **[SETUP_GUIDE.md](./SETUP_GUIDE.md)** for detailed instructions.
+
+### Quick Steps
+1. Create Supabase project at https://supabase.com
+2. Copy `.env.example` to `.env.local`
+3. Add your Supabase credentials
+4. Run migrations from `supabase-setup.sql`
+5. Create storage buckets (`gallery`, `products`)
+6. Create admin user
+7. Run `npm install && npm run dev`
+
+**Full guide**: [QUICK_START.md](./QUICK_START.md)
 
 ## 🌿 Features
 

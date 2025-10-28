@@ -5,6 +5,7 @@ import { Services } from "@/components/Services";
 import { Menu } from "@/components/Menu";
 import { Schedule } from "@/components/Schedule";
 import { Gallery } from "@/components/Gallery";
+import { Shop } from "@/components/Shop";
 import { Booking } from "@/components/Booking";
 import { Contact } from "@/components/Contact";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Menu />
       <Schedule />
       <Gallery />
+      <Shop />
       <Booking />
       <Contact />
     </>

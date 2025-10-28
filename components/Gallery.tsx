@@ -3,65 +3,106 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 const galleryImages = [
   {
     id: 1,
-    category: "yoga",
-    title: "Morning Yoga Session",
-    description: "Start your day with energizing yoga flows",
+    category: "icebath",
+    title: "Ice Bath Ceremony",
+    description: "Embrace the cold for ultimate wellness",
+    image: "/images/icebath breathing/DSC_4910.JPG",
   },
   {
     id: 2,
-    category: "food",
-    title: "Healthy Breakfast Bowl",
-    description: "Nutritious and delicious organic meals",
+    category: "icebath",
+    title: "Breathing Preparation",
+    description: "Master the Wim Hof breathing technique",
+    image: "/images/icebath breathing/DSC_4915.JPG",
   },
   {
     id: 3,
     category: "icebath",
-    title: "Ice Bath Experience",
-    description: "Embrace the cold for ultimate wellness",
+    title: "Cold Immersion",
+    description: "Experience the transformative power of cold",
+    image: "/images/icebath breathing/DSC_4934.JPG",
   },
   {
     id: 4,
-    category: "nature",
-    title: "Alpine Setting",
-    description: "Surrounded by breathtaking mountain views",
+    category: "icebath",
+    title: "Mindful Practice",
+    description: "Connect mind and body through breath",
+    image: "/images/icebath breathing/DSC_4986.JPG",
   },
   {
     id: 5,
-    category: "yoga",
-    title: "Sunset Meditation",
-    description: "Find peace in the golden hour",
+    category: "icebath",
+    title: "Group Session",
+    description: "Share the journey with others",
+    image: "/images/icebath breathing/DSC_5027.JPG",
   },
   {
     id: 6,
-    category: "food",
-    title: "Fresh Organic Salad",
-    description: "Farm-to-table ingredients",
+    category: "icebath",
+    title: "Recovery & Reflection",
+    description: "Integrate the experience",
+    image: "/images/icebath breathing/DSC_5148.JPG",
   },
   {
     id: 7,
-    category: "wimhof",
-    title: "Breathing Workshop",
-    description: "Master the Wim Hof breathing technique",
+    category: "icebath",
+    title: "Alpine Ice Bath",
+    description: "Natural cold therapy in the mountains",
+    image: "/images/icebath breathing/DSC_5157.JPG",
   },
   {
     id: 8,
-    category: "nature",
-    title: "Camp Menina",
-    description: "Your wellness sanctuary in the Alps",
+    category: "food",
+    title: "Healthy Breakfast Bowl",
+    description: "Nutritious and delicious organic meals",
+    image: "/images/izbrane hrana/DSC_4866.JPG",
+  },
+  {
+    id: 9,
+    category: "food",
+    title: "Fresh Ingredients",
+    description: "Farm-to-table quality",
+    image: "/images/izbrane hrana/DSC_4870.JPG",
+  },
+  {
+    id: 10,
+    category: "food",
+    title: "Nourishing Meals",
+    description: "Fuel your wellness journey",
+    image: "/images/izbrane hrana/DSC_4872.JPG",
+  },
+  {
+    id: 11,
+    category: "food",
+    title: "Organic Selection",
+    description: "Carefully curated ingredients",
+    image: "/images/izbrane hrana/DSC_4886.JPG",
+  },
+  {
+    id: 12,
+    category: "food",
+    title: "Wholesome Nutrition",
+    description: "Balanced and delicious",
+    image: "/images/izbrane hrana/DSC_4890.JPG",
+  },
+  {
+    id: 13,
+    category: "food",
+    title: "Culinary Excellence",
+    description: "Taste meets nutrition",
+    image: "/images/izbrane hrana/DSC_4906.JPG",
   },
 ];
 
 const categories = [
   { id: "all", label: "All" },
-  { id: "yoga", label: "Yoga" },
-  { id: "food", label: "Food" },
-  { id: "icebath", label: "Ice Bath" },
-  { id: "wimhof", label: "Wim Hof" },
-  { id: "nature", label: "Nature" },
+  { id: "icebath", label: "Ice Bath & Breathing" },
+  { id: "food", label: "Healthy Food" },
 ];
 
 export function Gallery() {
@@ -130,14 +171,14 @@ export function Gallery() {
               className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
               onClick={() => setSelectedImage(image.id)}
             >
-              {/* Placeholder with gradient - replace with actual images */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${
-                image.category === "yoga" ? "from-purple-400 to-pink-400" :
-                image.category === "food" ? "from-green-400 to-primary" :
-                image.category === "icebath" ? "from-cyan-400 to-blue-500" :
-                image.category === "wimhof" ? "from-blue-400 to-cyan-400" :
-                "from-primary to-yellow-400"
-              }`} />
+              {/* Actual Image */}
+              <Image
+                src={image.image}
+                alt={image.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              />
               
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-end p-6">
@@ -164,7 +205,7 @@ export function Gallery() {
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-4 right-4 text-white hover:text-primary transition-colors"
+              className="absolute top-4 right-4 text-white hover:text-primary transition-colors z-10"
               onClick={() => setSelectedImage(null)}
             >
               <X size={32} />
@@ -172,10 +213,27 @@ export function Gallery() {
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
-              className="max-w-4xl w-full aspect-video rounded-2xl overflow-hidden"
+              className="relative max-w-5xl w-full h-[80vh]"
+              onClick={(e) => e.stopPropagation()}
             >
-              {/* Placeholder - replace with actual image */}
-              <div className="w-full h-full bg-gradient-to-br from-primary to-yellow-400" />
+              {(() => {
+                const image = galleryImages.find(img => img.id === selectedImage);
+                return image ? (
+                  <>
+                    <Image
+                      src={image.image}
+                      alt={image.title}
+                      fill
+                      className="object-contain"
+                      sizes="100vw"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                      <h3 className="text-white font-bold text-2xl mb-2">{image.title}</h3>
+                      <p className="text-white/90">{image.description}</p>
+                    </div>
+                  </>
+                ) : null;
+              })()}
             </motion.div>
           </motion.div>
         )}
