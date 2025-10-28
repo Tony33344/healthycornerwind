@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { ShoppingCart, Plus, Minus, X } from "lucide-react";
 import { supabase, Product } from "@/lib/supabase";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface CartItem {
   product: Product;
@@ -12,6 +13,7 @@ interface CartItem {
 }
 
 export function Shop() {
+  const router = useRouter();
   const [products, setProducts] = useState<Product[]>([]);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [showCart, setShowCart] = useState(false);
@@ -19,6 +21,30 @@ export function Shop() {
 
   useEffect(() => {
     fetchProducts();
+    // Load cart from localStorage
+    const savedCart = localStorage.getItem("cart");
+    if (savedCart) {
+      try {
+        const parsedCart = JSON.parse(savedCart);
+        // Convert back to CartItem format
+        const cartItems = parsedCart.map((item: any) => ({
+          product: {
+            id: item.id,
+            name: item.name,
+            price: item.price,
+            slug: item.slug || "",
+            description: item.description || "",
+            published: true,
+            created_at: "",
+            updated_at: ""
+          },
+          quantity: item.quantity
+        }));
+        setCart(cartItems);
+      } catch (e) {
+        console.error("Failed to load cart:", e);
+      }
+    }
   }, []);
 
   const fetchProducts = async () => {
@@ -32,31 +58,50 @@ export function Shop() {
     setLoading(false);
   };
 
+  const saveCartToStorage = (cartItems: CartItem[]) => {
+    const cartData = cartItems.map(item => ({
+      id: item.product.id,
+      name: item.product.name,
+      price: item.product.price,
+      slug: item.product.slug,
+      description: item.product.description,
+      quantity: item.quantity
+    }));
+    localStorage.setItem("cart", JSON.stringify(cartData));
+  };
+
   const addToCart = (product: Product) => {
     const existing = cart.find(item => item.product.id === product.id);
+    let newCart: CartItem[];
     if (existing) {
-      setCart(cart.map(item => 
+      newCart = cart.map(item => 
         item.product.id === product.id 
           ? { ...item, quantity: item.quantity + 1 }
           : item
-      ));
+      );
     } else {
-      setCart([...cart, { product, quantity: 1 }]);
+      newCart = [...cart, { product, quantity: 1 }];
     }
+    setCart(newCart);
+    saveCartToStorage(newCart);
   };
 
   const updateQuantity = (productId: string, delta: number) => {
-    setCart(cart.map(item => {
+    const newCart = cart.map(item => {
       if (item.product.id === productId) {
         const newQty = item.quantity + delta;
         return newQty > 0 ? { ...item, quantity: newQty } : item;
       }
       return item;
-    }).filter(item => item.quantity > 0));
+    }).filter(item => item.quantity > 0);
+    setCart(newCart);
+    saveCartToStorage(newCart);
   };
 
   const removeFromCart = (productId: string) => {
-    setCart(cart.filter(item => item.product.id !== productId));
+    const newCart = cart.filter(item => item.product.id !== productId);
+    setCart(newCart);
+    saveCartToStorage(newCart);
   };
 
   const cartTotal = cart.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
@@ -198,7 +243,10 @@ export function Shop() {
                   <span>Total:</span>
                   <span className="text-primary">€{cartTotal.toFixed(2)}</span>
                 </div>
-                <button className="w-full py-4 bg-primary text-white rounded-xl font-semibold text-lg hover:bg-primary/90 transition-colors">
+                <button 
+                  onClick={() => router.push("/checkout")}
+                  className="w-full py-4 bg-primary text-white rounded-xl font-semibold text-lg hover:bg-primary/90 transition-colors"
+                >
                   Proceed to Checkout
                 </button>
               </div>
