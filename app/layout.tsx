@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["sl_SI"],
-    url: "https://healthycorner.si",
+    url: "https://healthycornersonnet.netlify.app",
     siteName: "Healthy Corner",
     title: "Healthy Corner - Alpine Wellness Retreat in Slovenia",
     description: "Transform your health with yoga, Wim Hof method, ice baths, and organic nutrition in the breathtaking Slovenian Alps.",
     images: [
       {
-        url: "/images/logo.png",
+        url: "https://healthycornersonnet.netlify.app/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Healthy Corner - Wellness Retreat",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Healthy Corner - Alpine Wellness Retreat",
     description: "Experience wellness transformation in the Slovenian Alps with yoga, Wim Hof method, and organic nutrition.",
-    images: ["/images/logo.png"],
+    images: ["https://healthycornersonnet.netlify.app/images/logo.png"],
   },
   robots: {
     index: true,
