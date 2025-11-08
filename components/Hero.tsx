@@ -39,7 +39,7 @@ export function Hero() {
           >
             <div className="relative w-80 h-48">
               <Image
-                src="/images/logo-black-bg.png"
+                src="/images/logo.png"
                 alt="Healthy Corner Logo"
                 fill
                 className="object-contain"
