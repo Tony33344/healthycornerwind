@@ -805,93 +805,91 @@
       - generic [ref=e1018]:
         - generic [ref=e1020]:
           - generic [ref=e1021]: Featured
-          - heading "Wim Hof Method Book" [level=3] [ref=e1022]
-          - paragraph [ref=e1023]: Complete guide to the Wim Hof Method
-          - generic [ref=e1025]: €24.99
+          - heading "7-Day Wellness Retreat" [level=3] [ref=e1022]
+          - paragraph [ref=e1023]: Intensive week-long wellness transformation program
+          - generic [ref=e1025]: €950
           - button "Add to Cart" [ref=e1026] [cursor=pointer]
         - generic [ref=e1028]:
           - generic [ref=e1029]: Featured
-          - heading "Yoga Mat Premium" [level=3] [ref=e1030]
-          - paragraph [ref=e1031]: High-quality eco-friendly yoga mat
-          - generic [ref=e1033]: €49.99
+          - heading "3-Day Wellness Retreat" [level=3] [ref=e1030]
+          - paragraph [ref=e1031]: Complete wellness experience with yoga, ice baths, and healthy meals
+          - generic [ref=e1033]: €450
           - button "Add to Cart" [ref=e1034] [cursor=pointer]
         - generic [ref=e1036]:
-          - generic [ref=e1037]: Featured
-          - heading "7-Day Wellness Retreat" [level=3] [ref=e1038]
-          - paragraph [ref=e1039]: Intensive week-long wellness transformation program
-          - generic [ref=e1041]: €950
-          - button "Add to Cart" [ref=e1042] [cursor=pointer]
-        - generic [ref=e1044]:
-          - generic [ref=e1045]: Featured
-          - heading "3-Day Wellness Retreat" [level=3] [ref=e1046]
-          - paragraph [ref=e1047]: Complete wellness experience with yoga, ice baths, and healthy meals
-          - generic [ref=e1049]: €450
-          - button "Add to Cart" [ref=e1050] [cursor=pointer]
-        - generic [ref=e1052]:
-          - heading "Ice Bath Workshop Ticket" [level=3] [ref=e1053]
-          - paragraph [ref=e1054]: 2-hour ice bath workshop
-          - generic [ref=e1056]: €89.99
-          - button "Add to Cart" [ref=e1057] [cursor=pointer]
-        - generic [ref=e1059]:
-          - heading "Monthly Membership" [level=3] [ref=e1060]
-          - paragraph [ref=e1061]: Unlimited access to all classes and facilities
-          - generic [ref=e1063]: €120
-          - button "Add to Cart" [ref=e1064] [cursor=pointer]
-        - generic [ref=e1066]:
-          - heading "Ice Bath Session" [level=3] [ref=e1067]
-          - paragraph [ref=e1068]: Single guided ice bath experience
-          - generic [ref=e1070]: €35
-          - button "Add to Cart" [ref=e1071] [cursor=pointer]
-        - generic [ref=e1073]:
-          - heading "Wim Hof Workshop" [level=3] [ref=e1074]
-          - paragraph [ref=e1075]: Learn breathing techniques and cold exposure methods
-          - generic [ref=e1077]: €75
-          - button "Add to Cart" [ref=e1078] [cursor=pointer]
-    - generic [ref=e1081]:
-      - generic [ref=e1082]:
-        - generic [ref=e1083]: BOOK YOUR EXPERIENCE
-        - heading "Start Your Wellness Journey" [level=2] [ref=e1085]
-        - paragraph [ref=e1086]: Reserve your spot for our classes, workshops, or multi-day retreats. Our team will confirm your booking within 24 hours.
-        - generic [ref=e1087]:
-          - generic [ref=e1088]:
-            - img [ref=e1090]
-            - generic [ref=e1092]:
-              - heading "Flexible Scheduling" [level=3] [ref=e1093]
-              - paragraph [ref=e1094]: Choose from daily classes or multi-day retreat programs
-          - generic [ref=e1095]:
-            - img [ref=e1097]
-            - generic [ref=e1102]:
-              - heading "Small Groups" [level=3] [ref=e1103]
-              - paragraph [ref=e1104]: Limited spots ensure personalized attention
-          - generic [ref=e1105]:
-            - img [ref=e1107]
-            - generic [ref=e1110]:
-              - heading "Quick Confirmation" [level=3] [ref=e1111]
-              - paragraph [ref=e1112]: Receive booking confirmation within 24 hours
-        - generic [ref=e1113]:
-          - paragraph [ref=e1114]: Need help choosing?
-          - paragraph [ref=e1115]: Contact us for personalized recommendations based on your wellness goals.
-          - link "Get in touch →" [ref=e1116] [cursor=pointer]:
+          - heading "Healthy Corner T-Shirt" [level=3] [ref=e1037]
+          - paragraph [ref=e1038]: Organic cotton t-shirt with our logo
+          - generic [ref=e1040]: €25
+          - button "Add to Cart" [ref=e1041] [cursor=pointer]
+        - generic [ref=e1043]:
+          - heading "Organic Herbal Tea Blend" [level=3] [ref=e1044]
+          - paragraph [ref=e1045]: Our signature wellness tea blend
+          - generic [ref=e1047]: €15
+          - button "Add to Cart" [ref=e1048] [cursor=pointer]
+        - generic [ref=e1050]:
+          - heading "Private Yoga Session" [level=3] [ref=e1051]
+          - paragraph [ref=e1052]: One-on-one personalized yoga instruction
+          - generic [ref=e1054]: €60
+          - button "Add to Cart" [ref=e1055] [cursor=pointer]
+        - generic [ref=e1057]:
+          - heading "Monthly Membership" [level=3] [ref=e1058]
+          - paragraph [ref=e1059]: Unlimited access to all classes and facilities
+          - generic [ref=e1061]: €120
+          - button "Add to Cart" [ref=e1062] [cursor=pointer]
+        - generic [ref=e1064]:
+          - heading "Ice Bath Session" [level=3] [ref=e1065]
+          - paragraph [ref=e1066]: Single guided ice bath experience
+          - generic [ref=e1068]: €35
+          - button "Add to Cart" [ref=e1069] [cursor=pointer]
+        - generic [ref=e1071]:
+          - heading "Wim Hof Workshop" [level=3] [ref=e1072]
+          - paragraph [ref=e1073]: Learn breathing techniques and cold exposure methods
+          - generic [ref=e1075]: €75
+          - button "Add to Cart" [ref=e1076] [cursor=pointer]
+    - generic [ref=e1079]:
+      - generic [ref=e1080]:
+        - generic [ref=e1081]: BOOK YOUR EXPERIENCE
+        - heading "Start Your Wellness Journey" [level=2] [ref=e1083]
+        - paragraph [ref=e1084]: Reserve your spot for our classes, workshops, or multi-day retreats. Our team will confirm your booking within 24 hours.
+        - generic [ref=e1085]:
+          - generic [ref=e1086]:
+            - img [ref=e1088]
+            - generic [ref=e1090]:
+              - heading "Flexible Scheduling" [level=3] [ref=e1091]
+              - paragraph [ref=e1092]: Choose from daily classes or multi-day retreat programs
+          - generic [ref=e1093]:
+            - img [ref=e1095]
+            - generic [ref=e1100]:
+              - heading "Small Groups" [level=3] [ref=e1101]
+              - paragraph [ref=e1102]: Limited spots ensure personalized attention
+          - generic [ref=e1103]:
+            - img [ref=e1105]
+            - generic [ref=e1108]:
+              - heading "Quick Confirmation" [level=3] [ref=e1109]
+              - paragraph [ref=e1110]: Receive booking confirmation within 24 hours
+        - generic [ref=e1111]:
+          - paragraph [ref=e1112]: Need help choosing?
+          - paragraph [ref=e1113]: Contact us for personalized recommendations based on your wellness goals.
+          - link "Get in touch →" [ref=e1114] [cursor=pointer]:
             - /url: "#contact"
-      - generic [ref=e1118]:
-        - generic [ref=e1119]:
-          - generic [ref=e1120]: Full Name *
-          - generic [ref=e1121]:
-            - img [ref=e1122]
-            - textbox "John Doe" [ref=e1125]
-        - generic [ref=e1126]:
-          - generic [ref=e1127]: Email Address *
-          - generic [ref=e1128]:
-            - img [ref=e1129]
-            - textbox "john@example.com" [ref=e1132]
-        - generic [ref=e1133]:
-          - generic [ref=e1134]: Phone Number *
-          - generic [ref=e1135]:
-            - img [ref=e1136]
-            - textbox "+386 XX XXX XXX" [ref=e1138]
-        - generic [ref=e1139]:
-          - generic [ref=e1140]: Select Service *
-          - combobox [ref=e1141]:
+      - generic [ref=e1116]:
+        - generic [ref=e1117]:
+          - generic [ref=e1118]: Full Name *
+          - generic [ref=e1119]:
+            - img [ref=e1120]
+            - textbox "John Doe" [ref=e1123]
+        - generic [ref=e1124]:
+          - generic [ref=e1125]: Email Address *
+          - generic [ref=e1126]:
+            - img [ref=e1127]
+            - textbox "john@example.com" [ref=e1130]
+        - generic [ref=e1131]:
+          - generic [ref=e1132]: Phone Number *
+          - generic [ref=e1133]:
+            - img [ref=e1134]
+            - textbox "+386 XX XXX XXX" [ref=e1136]
+        - generic [ref=e1137]:
+          - generic [ref=e1138]: Select Service *
+          - combobox [ref=e1139]:
             - option "Choose a service..." [selected]
             - option "Yoga Class"
             - option "Wim Hof Workshop"
@@ -900,13 +898,13 @@
             - option "Wellness Retreat (7 days)"
             - option "Private Session"
             - option "Group Event"
-        - generic [ref=e1142]:
-          - generic [ref=e1143]:
-            - generic [ref=e1144]: Date *
-            - textbox [ref=e1145]
-          - generic [ref=e1146]:
-            - generic [ref=e1147]: Time *
-            - combobox [ref=e1148]:
+        - generic [ref=e1140]:
+          - generic [ref=e1141]:
+            - generic [ref=e1142]: Date *
+            - textbox [ref=e1143]
+          - generic [ref=e1144]:
+            - generic [ref=e1145]: Time *
+            - combobox [ref=e1146]:
               - option "Select..." [selected]
               - option "07:00"
               - option "09:00"
@@ -914,150 +912,150 @@
               - option "14:00"
               - option "16:00"
               - option "17:00"
-        - generic [ref=e1149]:
-          - generic [ref=e1150]: Number of Guests *
-          - spinbutton [ref=e1151]: "1"
-        - generic [ref=e1152]:
-          - generic [ref=e1153]: Additional Message (Optional)
-          - textbox "Any special requirements or questions..." [ref=e1154]
-        - button "Book Now" [ref=e1155] [cursor=pointer]
-    - generic [ref=e1158]:
-      - img [ref=e1160]
-      - heading "Stay Connected" [level=2] [ref=e1163]
-      - paragraph [ref=e1164]: Subscribe to our newsletter for wellness tips, retreat updates, and exclusive offers.
-      - generic [ref=e1166]:
-        - textbox "Enter your email" [ref=e1168]
-        - button "Subscribe" [ref=e1169] [cursor=pointer]:
+        - generic [ref=e1147]:
+          - generic [ref=e1148]: Number of Guests *
+          - spinbutton [ref=e1149]: "1"
+        - generic [ref=e1150]:
+          - generic [ref=e1151]: Additional Message (Optional)
+          - textbox "Any special requirements or questions..." [ref=e1152]
+        - button "Book Now" [ref=e1153] [cursor=pointer]
+    - generic [ref=e1156]:
+      - img [ref=e1158]
+      - heading "Stay Connected" [level=2] [ref=e1161]
+      - paragraph [ref=e1162]: Subscribe to our newsletter for wellness tips, retreat updates, and exclusive offers.
+      - generic [ref=e1164]:
+        - textbox "Enter your email" [ref=e1166]
+        - button "Subscribe" [ref=e1167] [cursor=pointer]:
           - text: Subscribe
-          - img [ref=e1170]
-      - paragraph [ref=e1173]: We respect your privacy. Unsubscribe at any time.
-    - generic [ref=e1175]:
-      - generic [ref=e1176]:
-        - generic [ref=e1177]: CONTACT US
-        - heading "Get In Touch" [level=2] [ref=e1179]
-        - paragraph [ref=e1180]: Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-      - generic [ref=e1181]:
-        - generic [ref=e1182]:
-          - generic [ref=e1183]:
-            - heading "Contact Information" [level=3] [ref=e1184]
-            - paragraph [ref=e1185]: Reach out to us through any of these channels. We're here to help you start your wellness journey.
-          - generic [ref=e1186]:
-            - generic [ref=e1187]:
-              - img [ref=e1189]
-              - generic [ref=e1192]:
-                - heading "Location" [level=4] [ref=e1193]
-                - paragraph [ref=e1194]:
+          - img [ref=e1168]
+      - paragraph [ref=e1171]: We respect your privacy. Unsubscribe at any time.
+    - generic [ref=e1173]:
+      - generic [ref=e1174]:
+        - generic [ref=e1175]: CONTACT US
+        - heading "Get In Touch" [level=2] [ref=e1177]
+        - paragraph [ref=e1178]: Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+      - generic [ref=e1179]:
+        - generic [ref=e1180]:
+          - generic [ref=e1181]:
+            - heading "Contact Information" [level=3] [ref=e1182]
+            - paragraph [ref=e1183]: Reach out to us through any of these channels. We're here to help you start your wellness journey.
+          - generic [ref=e1184]:
+            - generic [ref=e1185]:
+              - img [ref=e1187]
+              - generic [ref=e1190]:
+                - heading "Location" [level=4] [ref=e1191]
+                - paragraph [ref=e1192]:
                   - text: Camp Menina
                   - text: Mozirje, Slovenia
-            - generic [ref=e1195]:
-              - img [ref=e1197]
-              - generic [ref=e1199]:
-                - heading "Phone" [level=4] [ref=e1200]
-                - paragraph [ref=e1201]: +386 XX XXX XXX
-            - generic [ref=e1202]:
-              - img [ref=e1204]
-              - generic [ref=e1207]:
-                - heading "Email" [level=4] [ref=e1208]
-                - paragraph [ref=e1209]: info@healthycorner.si
-            - generic [ref=e1210]:
-              - img [ref=e1212]
-              - generic [ref=e1215]:
-                - heading "Hours" [level=4] [ref=e1216]
-                - paragraph [ref=e1217]:
+            - generic [ref=e1193]:
+              - img [ref=e1195]
+              - generic [ref=e1197]:
+                - heading "Phone" [level=4] [ref=e1198]
+                - paragraph [ref=e1199]: +386 XX XXX XXX
+            - generic [ref=e1200]:
+              - img [ref=e1202]
+              - generic [ref=e1205]:
+                - heading "Email" [level=4] [ref=e1206]
+                - paragraph [ref=e1207]: info@healthycorner.si
+            - generic [ref=e1208]:
+              - img [ref=e1210]
+              - generic [ref=e1213]:
+                - heading "Hours" [level=4] [ref=e1214]
+                - paragraph [ref=e1215]:
                   - text: Monday - Sunday
                   - text: 7:00 AM - 8:00 PM
-          - img [ref=e1220]
-        - generic [ref=e1224]:
-          - generic [ref=e1225]:
-            - generic [ref=e1226]:
-              - generic [ref=e1227]: Your Name *
-              - textbox "John Doe" [ref=e1228]
-            - generic [ref=e1229]:
-              - generic [ref=e1230]: Email Address *
-              - textbox "john@example.com" [ref=e1231]
-          - generic [ref=e1232]:
-            - generic [ref=e1233]: Subject *
-            - textbox "How can we help you?" [ref=e1234]
-          - generic [ref=e1235]:
-            - generic [ref=e1236]: Message *
-            - textbox "Tell us more about your inquiry..." [ref=e1237]
-          - button "Send Message" [ref=e1238] [cursor=pointer]:
-            - generic [ref=e1239]: Send Message
-            - img [ref=e1240]
-  - contentinfo [ref=e1243]:
-    - generic [ref=e1244]:
-      - generic [ref=e1245]:
-        - generic [ref=e1246]:
-          - img "Healthy Corner Logo" [ref=e1249]
-          - paragraph [ref=e1250]: Your wellness sanctuary in the heart of the Alps. Experience transformation through healthy living, yoga, and cold therapy.
-          - generic [ref=e1251]:
-            - link [ref=e1252] [cursor=pointer]:
+          - img [ref=e1218]
+        - generic [ref=e1222]:
+          - generic [ref=e1223]:
+            - generic [ref=e1224]:
+              - generic [ref=e1225]: Your Name *
+              - textbox "John Doe" [ref=e1226]
+            - generic [ref=e1227]:
+              - generic [ref=e1228]: Email Address *
+              - textbox "john@example.com" [ref=e1229]
+          - generic [ref=e1230]:
+            - generic [ref=e1231]: Subject *
+            - textbox "How can we help you?" [ref=e1232]
+          - generic [ref=e1233]:
+            - generic [ref=e1234]: Message *
+            - textbox "Tell us more about your inquiry..." [ref=e1235]
+          - button "Send Message" [ref=e1236] [cursor=pointer]:
+            - generic [ref=e1237]: Send Message
+            - img [ref=e1238]
+  - contentinfo [ref=e1241]:
+    - generic [ref=e1242]:
+      - generic [ref=e1243]:
+        - generic [ref=e1244]:
+          - img "Healthy Corner Logo" [ref=e1247]
+          - paragraph [ref=e1248]: Your wellness sanctuary in the heart of the Alps. Experience transformation through healthy living, yoga, and cold therapy.
+          - generic [ref=e1249]:
+            - link [ref=e1250] [cursor=pointer]:
               - /url: https://facebook.com
-              - img [ref=e1253]
-            - link [ref=e1255] [cursor=pointer]:
+              - img [ref=e1251]
+            - link [ref=e1253] [cursor=pointer]:
               - /url: https://instagram.com
-              - img [ref=e1256]
-            - link [ref=e1259] [cursor=pointer]:
+              - img [ref=e1254]
+            - link [ref=e1257] [cursor=pointer]:
               - /url: mailto:info@healthycorner.si
-              - img [ref=e1260]
-        - generic [ref=e1263]:
-          - heading "Services" [level=3] [ref=e1264]
-          - list [ref=e1265]:
+              - img [ref=e1258]
+        - generic [ref=e1261]:
+          - heading "Services" [level=3] [ref=e1262]
+          - list [ref=e1263]:
+            - listitem [ref=e1264]:
+              - link "Yoga Classes" [ref=e1265] [cursor=pointer]:
+                - /url: "#services"
             - listitem [ref=e1266]:
-              - link "Yoga Classes" [ref=e1267] [cursor=pointer]:
+              - link "Wim Hof Method" [ref=e1267] [cursor=pointer]:
                 - /url: "#services"
             - listitem [ref=e1268]:
-              - link "Wim Hof Method" [ref=e1269] [cursor=pointer]:
+              - link "Ice Baths" [ref=e1269] [cursor=pointer]:
                 - /url: "#services"
             - listitem [ref=e1270]:
-              - link "Ice Baths" [ref=e1271] [cursor=pointer]:
-                - /url: "#services"
-            - listitem [ref=e1272]:
-              - link "Healthy Food" [ref=e1273] [cursor=pointer]:
+              - link "Healthy Food" [ref=e1271] [cursor=pointer]:
                 - /url: "#menu"
-            - listitem [ref=e1274]:
-              - link "Wellness Retreats" [ref=e1275] [cursor=pointer]:
+            - listitem [ref=e1272]:
+              - link "Wellness Retreats" [ref=e1273] [cursor=pointer]:
                 - /url: "#services"
-        - generic [ref=e1276]:
-          - heading "Quick Links" [level=3] [ref=e1277]
-          - list [ref=e1278]:
-            - listitem [ref=e1279]:
-              - link "About Us" [ref=e1280] [cursor=pointer]:
+        - generic [ref=e1274]:
+          - heading "Quick Links" [level=3] [ref=e1275]
+          - list [ref=e1276]:
+            - listitem [ref=e1277]:
+              - link "About Us" [ref=e1278] [cursor=pointer]:
                 - /url: "#about"
-            - listitem [ref=e1281]:
-              - link "Schedule" [ref=e1282] [cursor=pointer]:
+            - listitem [ref=e1279]:
+              - link "Schedule" [ref=e1280] [cursor=pointer]:
                 - /url: "#schedule"
-            - listitem [ref=e1283]:
-              - link "Gallery" [ref=e1284] [cursor=pointer]:
+            - listitem [ref=e1281]:
+              - link "Gallery" [ref=e1282] [cursor=pointer]:
                 - /url: "#gallery"
-            - listitem [ref=e1285]:
-              - link "Book Now" [ref=e1286] [cursor=pointer]:
+            - listitem [ref=e1283]:
+              - link "Book Now" [ref=e1284] [cursor=pointer]:
                 - /url: "#booking"
-            - listitem [ref=e1287]:
-              - link "Contact" [ref=e1288] [cursor=pointer]:
+            - listitem [ref=e1285]:
+              - link "Contact" [ref=e1286] [cursor=pointer]:
                 - /url: "#contact"
-        - generic [ref=e1289]:
-          - heading "Contact" [level=3] [ref=e1290]
-          - list [ref=e1291]:
-            - listitem [ref=e1292]:
-              - img [ref=e1293]
-              - generic [ref=e1296]:
+        - generic [ref=e1287]:
+          - heading "Contact" [level=3] [ref=e1288]
+          - list [ref=e1289]:
+            - listitem [ref=e1290]:
+              - img [ref=e1291]
+              - generic [ref=e1294]:
                 - text: Camp Menina
                 - text: Mozirje, Slovenia
-            - listitem [ref=e1297]:
-              - img [ref=e1298]
-              - generic [ref=e1300]: +386 XX XXX XXX
-            - listitem [ref=e1301]:
-              - img [ref=e1302]
-              - generic [ref=e1305]: info@healthycorner.si
-      - generic [ref=e1307]:
-        - paragraph [ref=e1308]: © 2025 Healthy Corner. All rights reserved.
-        - generic [ref=e1309]:
-          - link "Privacy Policy" [ref=e1310] [cursor=pointer]:
+            - listitem [ref=e1295]:
+              - img [ref=e1296]
+              - generic [ref=e1298]: +386 XX XXX XXX
+            - listitem [ref=e1299]:
+              - img [ref=e1300]
+              - generic [ref=e1303]: info@healthycorner.si
+      - generic [ref=e1305]:
+        - paragraph [ref=e1306]: © 2025 Healthy Corner. All rights reserved.
+        - generic [ref=e1307]:
+          - link "Privacy Policy" [ref=e1308] [cursor=pointer]:
             - /url: "#"
-          - link "Terms of Service" [ref=e1311] [cursor=pointer]:
+          - link "Terms of Service" [ref=e1309] [cursor=pointer]:
             - /url: "#"
-          - link "Cookie Policy" [ref=e1312] [cursor=pointer]:
+          - link "Cookie Policy" [ref=e1310] [cursor=pointer]:
             - /url: "#"
-  - alert [ref=e1313]
+  - alert [ref=e1311]
 ```

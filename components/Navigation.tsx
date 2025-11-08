@@ -65,10 +65,10 @@ export function Navigation() {
                 </div>
               </div>
             ) : (
-              // When transparent - show full logo image (no background)
+              // When transparent - show full logo image
               <div className="relative w-64 h-16">
                 <Image
-                  src="/images/logo-black-bg.png"
+                  src="/images/logo.png"
                   alt="Healthy Corner Logo"
                   fill
                   className="object-contain object-left"

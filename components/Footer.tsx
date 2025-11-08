@@ -31,7 +31,7 @@ export function Footer() {
             <div className="mb-6">
               <div className="relative w-48 h-24">
                 <Image
-                  src="/images/logo-black-bg.png"
+                  src="/images/logo.png"
                   alt="Healthy Corner Logo"
                   fill
                   className="object-contain object-left"
