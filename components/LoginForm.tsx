@@ -23,19 +23,22 @@ export function LoginForm() {
     setError(null);
 
     try {
+      console.log('Attempting login for:', data.email);
       const { error } = await signIn(data.email, data.password);
       
       if (error) {
+        console.error('Login error from Supabase:', error);
         setError(error.message);
+        setIsSubmitting(false);
         return;
       }
 
+      console.log('Login successful, redirecting to /admin');
       // Redirect to admin dashboard
       router.push('/admin');
     } catch (err) {
+      console.error('Login exception:', err);
       setError('An unexpected error occurred');
-      console.error('Login error:', err);
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -48,7 +51,7 @@ export function LoginForm() {
           <p className="text-neutral-600">Sign in to access the dashboard</p>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" method="post" action="/api/auth/signin">
           {/* Email */}
           <div>
             <label className="block text-sm font-medium text-neutral-700 mb-2">

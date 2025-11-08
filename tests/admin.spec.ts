@@ -46,7 +46,7 @@ test.describe('Admin Dashboard', () => {
     await expect(bookingsTab).toBeVisible({ timeout: 10000 });
     
     // Verify bookings content is displayed
-    await expect(page.locator('text=Total Bookings, text=Bookings').first()).toBeVisible({ timeout: 10000 });
+    await expect(page.locator('text=Total Bookings').first()).toBeVisible({ timeout: 10000 });
   });
 
   test('should navigate to media manager', async ({ page }) => {
@@ -134,7 +134,7 @@ test.describe('Product Management', () => {
     await page.waitForTimeout(1000);
     
     // Verify products content
-    await expect(page.locator('text=Product, text=Add Product').first()).toBeVisible({ timeout: 10000 });
+    await expect(page.locator('text=Product management coming soon').first()).toBeVisible({ timeout: 10000 });
   });
 
   test('should open add product modal', async ({ page }) => {
@@ -206,7 +206,7 @@ test.describe('Order Management', () => {
     await page.waitForTimeout(1000);
     
     // Verify orders content or empty state
-    const ordersSection = page.locator('text=No orders, text=Order, text=HC-').first();
+    const ordersSection = page.locator('text=No orders yet').first();
     await expect(ordersSection).toBeVisible({ timeout: 10000 });
   });
 

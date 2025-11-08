@@ -246,9 +246,9 @@ test.describe('Data Collection: What gets stored', () => {
     const currentUrl = page.url();
     if (currentUrl.includes('checkout')) {
       // Check required fields
-      await expect(page.locator('input[type="email"]')).toBeVisible();
-      await expect(page.locator('input[type="text"]')).toBeVisible();
-      await expect(page.locator('input[type="tel"]')).toBeVisible();
+      await expect(page.locator('input[type="email"]').first()).toBeVisible();
+      await expect(page.locator('input[type="text"]').first()).toBeVisible();
+      await expect(page.locator('input[type="tel"]').first()).toBeVisible();
     }
   });
 });

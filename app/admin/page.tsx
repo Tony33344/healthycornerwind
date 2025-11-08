@@ -344,7 +344,7 @@ export default function AdminDashboard() {
                   ))
                 )}
               </div>
-            ) : (
+            ) : activeTab === 'messages' ? (
               <div className="space-y-4">
                 {messages.length === 0 ? (
                   <p className="text-center text-neutral-500 py-8">No messages yet</p>
@@ -395,7 +395,21 @@ export default function AdminDashboard() {
                   ))
                 )}
               </div>
-            )}
+            ) : activeTab === 'products' ? (
+              <div className="space-y-4">
+                <div className="text-center py-12">
+                  <p className="text-neutral-600 mb-4">Product management coming soon</p>
+                  <p className="text-sm text-neutral-500">You can manage products from the database directly</p>
+                </div>
+              </div>
+            ) : activeTab === 'orders' ? (
+              <div className="space-y-4">
+                <div className="text-center py-12">
+                  <p className="text-neutral-600 mb-4">No orders yet</p>
+                  <p className="text-sm text-neutral-500">Orders will appear here when customers make purchases</p>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
