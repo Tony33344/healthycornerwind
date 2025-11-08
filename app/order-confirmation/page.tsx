@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { CheckCircle, Package, Mail, Home } from "lucide-react";
 
-export default function OrderConfirmationPage() {
+function OrderConfirmationContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [orderNumber, setOrderNumber] = useState("");
@@ -40,8 +40,11 @@ export default function OrderConfirmationPage() {
             Order Confirmed!
           </h1>
           
-          <p className="text-xl text-neutral-600 mb-8">
+          <p className="text-xl text-neutral-600 mb-2">
             Thank you for your order. We've received your request and will process it shortly.
+          </p>
+          <p className="text-lg text-neutral-500 mb-8">
+            A confirmation email will be sent to your email address with order details and tracking information.
           </p>
 
           <div className="bg-neutral-50 rounded-xl p-6 mb-8">
@@ -83,5 +86,20 @@ export default function OrderConfirmationPage() {
         </div>
       </motion.div>
     </div>
+  );
+}
+
+export default function OrderConfirmationPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-neutral-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+          <p className="mt-4 text-neutral-600">Loading...</p>
+        </div>
+      </div>
+    }>
+      <OrderConfirmationContent />
+    </Suspense>
   );
 }

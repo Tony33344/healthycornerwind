@@ -1,0 +1,107 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2]:
+    - /url: "#main-content"
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - link "Healthy Corner Logo" [ref=e6]:
+        - /url: "#home"
+        - img "Healthy Corner Logo" [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10]:
+          - /url: "#home"
+        - link "About" [ref=e11]:
+          - /url: "#about"
+        - link "Services" [ref=e12]:
+          - /url: "#services"
+        - link "Menu" [ref=e13]:
+          - /url: "#menu"
+        - link "Schedule" [ref=e14]:
+          - /url: "#schedule"
+        - link "Gallery" [ref=e15]:
+          - /url: "#gallery"
+        - link "Contact" [ref=e16]:
+          - /url: "#contact"
+        - button "Switch to Slovenian" [ref=e17] [cursor=pointer]: SL
+        - link "Book Now" [ref=e18]:
+          - /url: "#booking"
+  - main [ref=e19]:
+    - paragraph [ref=e23]: Verifying access...
+  - contentinfo [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - img "Healthy Corner Logo" [ref=e30]
+          - paragraph [ref=e31]: Your wellness sanctuary in the heart of the Alps. Experience transformation through healthy living, yoga, and cold therapy.
+          - generic [ref=e32]:
+            - link [ref=e33]:
+              - /url: https://facebook.com
+              - img [ref=e34]
+            - link [ref=e36]:
+              - /url: https://instagram.com
+              - img [ref=e37]
+            - link [ref=e40]:
+              - /url: mailto:info@healthycorner.si
+              - img [ref=e41]
+        - generic [ref=e44]:
+          - heading "Services" [level=3] [ref=e45]
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Yoga Classes" [ref=e48]:
+                - /url: "#services"
+            - listitem [ref=e49]:
+              - link "Wim Hof Method" [ref=e50]:
+                - /url: "#services"
+            - listitem [ref=e51]:
+              - link "Ice Baths" [ref=e52]:
+                - /url: "#services"
+            - listitem [ref=e53]:
+              - link "Healthy Food" [ref=e54]:
+                - /url: "#menu"
+            - listitem [ref=e55]:
+              - link "Wellness Retreats" [ref=e56]:
+                - /url: "#services"
+        - generic [ref=e57]:
+          - heading "Quick Links" [level=3] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "About Us" [ref=e61]:
+                - /url: "#about"
+            - listitem [ref=e62]:
+              - link "Schedule" [ref=e63]:
+                - /url: "#schedule"
+            - listitem [ref=e64]:
+              - link "Gallery" [ref=e65]:
+                - /url: "#gallery"
+            - listitem [ref=e66]:
+              - link "Book Now" [ref=e67]:
+                - /url: "#booking"
+            - listitem [ref=e68]:
+              - link "Contact" [ref=e69]:
+                - /url: "#contact"
+        - generic [ref=e70]:
+          - heading "Contact" [level=3] [ref=e71]
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - img [ref=e74]
+              - generic [ref=e77]:
+                - text: Camp Menina
+                - text: Mozirje, Slovenia
+            - listitem [ref=e78]:
+              - img [ref=e79]
+              - generic [ref=e81]: +386 XX XXX XXX
+            - listitem [ref=e82]:
+              - img [ref=e83]
+              - generic [ref=e86]: info@healthycorner.si
+      - generic [ref=e88]:
+        - paragraph [ref=e89]: © 2025 Healthy Corner. All rights reserved.
+        - generic [ref=e90]:
+          - link "Privacy Policy" [ref=e91]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e92]:
+            - /url: "#"
+          - link "Cookie Policy" [ref=e93]:
+            - /url: "#"
+```

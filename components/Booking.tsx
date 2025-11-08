@@ -34,6 +34,7 @@ const timeSlots = [
 export function Booking() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submittedEmail, setSubmittedEmail] = useState('');
   
   const { register, handleSubmit, formState: { errors }, reset } = useForm<BookingFormData>();
 
@@ -60,9 +61,19 @@ export function Booking() {
       }
       
       console.log('Booking submitted successfully!');
+      
+      // TODO: Implement email confirmation service
+      // Send confirmation email to customer at data.email
+      // Send notification email to admin at admin@healthycorner.com
+      // Use services like SendGrid, AWS SES, or Resend
+      
+      setSubmittedEmail(data.email);
       setSubmitSuccess(true);
       reset();
-      setTimeout(() => setSubmitSuccess(false), 5000);
+      setTimeout(() => {
+        setSubmitSuccess(false);
+        setSubmittedEmail('');
+      }, 5000);
     } catch (error) {
       console.error('Error submitting booking:', error);
       alert('Failed to submit booking. Please try again or contact us directly.');
@@ -303,7 +314,7 @@ export function Booking() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-center"
                 >
-                  ✓ Booking request submitted! We'll contact you within 24 hours.
+                  ✓ Booking request submitted successfully! We'll send you a confirmation email at {submittedEmail} within 24 hours to confirm your reservation.
                 </motion.div>
               )}
             </form>

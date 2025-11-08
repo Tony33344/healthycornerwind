@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { ShoppingCart, CreditCard, User, Mail, Phone, MapPin } from "lucide-react";
@@ -13,7 +13,7 @@ interface CartItem {
   quantity: number;
 }
 
-export default function CheckoutPage() {
+function CheckoutContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -92,6 +92,11 @@ export default function CheckoutPage() {
 
       if (itemsError) throw itemsError;
 
+      // TODO: Implement order confirmation email
+      // Send order confirmation email to formData.email with order details
+      // Send notification to admin about new order
+      // Include order number, items, total, shipping address
+      
       // Clear cart
       localStorage.removeItem("cart");
 
@@ -296,5 +301,20 @@ export default function CheckoutPage() {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+export default function CheckoutPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-neutral-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+          <p className="mt-4 text-neutral-600">Loading checkout...</p>
+        </div>
+      </div>
+    }>
+      <CheckoutContent />
+    </Suspense>
   );
 }

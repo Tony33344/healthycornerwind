@@ -1,0 +1,514 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2]:
+    - /url: "#main-content"
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - link "Healthy Corner Logo" [ref=e6]:
+        - /url: "#home"
+        - img "Healthy Corner Logo" [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10]:
+          - /url: "#home"
+        - link "About" [ref=e11]:
+          - /url: "#about"
+        - link "Services" [ref=e12]:
+          - /url: "#services"
+        - link "Menu" [ref=e13]:
+          - /url: "#menu"
+        - link "Schedule" [ref=e14]:
+          - /url: "#schedule"
+        - link "Gallery" [ref=e15]:
+          - /url: "#gallery"
+        - link "Contact" [ref=e16]:
+          - /url: "#contact"
+        - button "Switch to Slovenian" [ref=e17] [cursor=pointer]: SL
+        - link "Book Now" [ref=e18]:
+          - /url: "#booking"
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Admin Dashboard" [level=1] [ref=e25]
+          - paragraph [ref=e26]: admin@healthycorner.com
+        - button "Sign Out" [ref=e27] [cursor=pointer]:
+          - img [ref=e28]
+          - generic [ref=e31]: Sign Out
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Total Bookings
+              - paragraph [ref=e38]: "14"
+            - img [ref=e40]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - paragraph [ref=e45]: Pending Bookings
+              - paragraph [ref=e46]: "14"
+            - img [ref=e48]
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - paragraph [ref=e54]: Unread Messages
+              - paragraph [ref=e55]: "16"
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - generic [ref=e61]:
+            - button "Bookings (14)" [ref=e62] [cursor=pointer]
+            - button "Messages (16)" [ref=e63] [cursor=pointer]
+            - button "Products" [ref=e64] [cursor=pointer]
+            - button "Orders" [ref=e65] [cursor=pointer]
+            - button "Media Manager" [ref=e66] [cursor=pointer]
+          - generic [ref=e68]:
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - generic [ref=e72]:
+                  - img [ref=e73]
+                  - generic [ref=e76]: Test User
+                  - generic [ref=e77]: pending
+                - generic [ref=e78]:
+                  - generic [ref=e79]:
+                    - img [ref=e80]
+                    - generic [ref=e83]: test@confirmation.com
+                  - generic [ref=e84]:
+                    - img [ref=e85]
+                    - generic [ref=e87]: "+386123456789"
+                  - generic [ref=e88]:
+                    - img [ref=e89]
+                    - generic [ref=e91]: 2025-11-06 at 07:00
+                  - generic [ref=e92]:
+                    - img [ref=e93]
+                    - generic [ref=e98]: 2 guest(s)
+                - paragraph [ref=e100]: "Service: Yoga Class"
+                - paragraph [ref=e101]: "Created: 11/6/2025, 12:08:40 AM"
+              - combobox [ref=e103]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]:
+                  - img [ref=e108]
+                  - generic [ref=e111]: Jane Visitor
+                  - generic [ref=e112]: pending
+                - generic [ref=e113]:
+                  - generic [ref=e114]:
+                    - img [ref=e115]
+                    - generic [ref=e118]: jane@example.com
+                  - generic [ref=e119]:
+                    - img [ref=e120]
+                    - generic [ref=e122]: +386 99 123 4567
+                  - generic [ref=e123]:
+                    - img [ref=e124]
+                    - generic [ref=e126]: 2025-11-12 at 07:00
+                  - generic [ref=e127]:
+                    - img [ref=e128]
+                    - generic [ref=e133]: 1 guest(s)
+                - generic [ref=e134]:
+                  - paragraph [ref=e135]: "Service: Wellness Retreat (3 days)"
+                  - paragraph [ref=e136]: "Message: First time visitor, very excited!"
+                - paragraph [ref=e137]: "Created: 11/6/2025, 12:08:21 AM"
+              - combobox [ref=e139]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - generic [ref=e143]:
+                  - img [ref=e144]
+                  - generic [ref=e147]: Test User
+                  - generic [ref=e148]: pending
+                - generic [ref=e149]:
+                  - generic [ref=e150]:
+                    - img [ref=e151]
+                    - generic [ref=e154]: test@confirmation.com
+                  - generic [ref=e155]:
+                    - img [ref=e156]
+                    - generic [ref=e158]: "+386123456789"
+                  - generic [ref=e159]:
+                    - img [ref=e160]
+                    - generic [ref=e162]: 2025-11-06 at 07:00
+                  - generic [ref=e163]:
+                    - img [ref=e164]
+                    - generic [ref=e169]: 2 guest(s)
+                - paragraph [ref=e171]: "Service: Yoga Class"
+                - paragraph [ref=e172]: "Created: 11/6/2025, 12:07:31 AM"
+              - combobox [ref=e174]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - generic [ref=e178]:
+                  - img [ref=e179]
+                  - generic [ref=e182]: Jane Visitor
+                  - generic [ref=e183]: pending
+                - generic [ref=e184]:
+                  - generic [ref=e185]:
+                    - img [ref=e186]
+                    - generic [ref=e189]: jane@example.com
+                  - generic [ref=e190]:
+                    - img [ref=e191]
+                    - generic [ref=e193]: +386 99 123 4567
+                  - generic [ref=e194]:
+                    - img [ref=e195]
+                    - generic [ref=e197]: 2025-11-12 at 07:00
+                  - generic [ref=e198]:
+                    - img [ref=e199]
+                    - generic [ref=e204]: 1 guest(s)
+                - generic [ref=e205]:
+                  - paragraph [ref=e206]: "Service: Wellness Retreat (3 days)"
+                  - paragraph [ref=e207]: "Message: First time visitor, very excited!"
+                - paragraph [ref=e208]: "Created: 11/6/2025, 12:06:20 AM"
+              - combobox [ref=e210]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - img [ref=e215]
+                  - generic [ref=e218]: Test User
+                  - generic [ref=e219]: pending
+                - generic [ref=e220]:
+                  - generic [ref=e221]:
+                    - img [ref=e222]
+                    - generic [ref=e225]: test@confirmation.com
+                  - generic [ref=e226]:
+                    - img [ref=e227]
+                    - generic [ref=e229]: "+386123456789"
+                  - generic [ref=e230]:
+                    - img [ref=e231]
+                    - generic [ref=e233]: 2025-11-06 at 07:00
+                  - generic [ref=e234]:
+                    - img [ref=e235]
+                    - generic [ref=e240]: 2 guest(s)
+                - paragraph [ref=e242]: "Service: Yoga Class"
+                - paragraph [ref=e243]: "Created: 11/6/2025, 12:02:19 AM"
+              - combobox [ref=e245]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - generic [ref=e249]:
+                  - img [ref=e250]
+                  - generic [ref=e253]: Jane Visitor
+                  - generic [ref=e254]: pending
+                - generic [ref=e255]:
+                  - generic [ref=e256]:
+                    - img [ref=e257]
+                    - generic [ref=e260]: jane@example.com
+                  - generic [ref=e261]:
+                    - img [ref=e262]
+                    - generic [ref=e264]: +386 99 123 4567
+                  - generic [ref=e265]:
+                    - img [ref=e266]
+                    - generic [ref=e268]: 2025-11-12 at 07:00
+                  - generic [ref=e269]:
+                    - img [ref=e270]
+                    - generic [ref=e275]: 1 guest(s)
+                - generic [ref=e276]:
+                  - paragraph [ref=e277]: "Service: Wellness Retreat (3 days)"
+                  - paragraph [ref=e278]: "Message: First time visitor, very excited!"
+                - paragraph [ref=e279]: "Created: 11/6/2025, 12:01:59 AM"
+              - combobox [ref=e281]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - generic [ref=e285]:
+                  - img [ref=e286]
+                  - generic [ref=e289]: Test User
+                  - generic [ref=e290]: pending
+                - generic [ref=e291]:
+                  - generic [ref=e292]:
+                    - img [ref=e293]
+                    - generic [ref=e296]: test@confirmation.com
+                  - generic [ref=e297]:
+                    - img [ref=e298]
+                    - generic [ref=e300]: "+386123456789"
+                  - generic [ref=e301]:
+                    - img [ref=e302]
+                    - generic [ref=e304]: 2025-11-06 at 07:00
+                  - generic [ref=e305]:
+                    - img [ref=e306]
+                    - generic [ref=e311]: 2 guest(s)
+                - paragraph [ref=e313]: "Service: Yoga Class"
+                - paragraph [ref=e314]: "Created: 11/5/2025, 11:55:04 PM"
+              - combobox [ref=e316]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e318]:
+              - generic [ref=e319]:
+                - generic [ref=e320]:
+                  - img [ref=e321]
+                  - generic [ref=e324]: Jane Visitor
+                  - generic [ref=e325]: pending
+                - generic [ref=e326]:
+                  - generic [ref=e327]:
+                    - img [ref=e328]
+                    - generic [ref=e331]: jane@example.com
+                  - generic [ref=e332]:
+                    - img [ref=e333]
+                    - generic [ref=e335]: +386 99 123 4567
+                  - generic [ref=e336]:
+                    - img [ref=e337]
+                    - generic [ref=e339]: 2025-11-12 at 07:00
+                  - generic [ref=e340]:
+                    - img [ref=e341]
+                    - generic [ref=e346]: 1 guest(s)
+                - generic [ref=e347]:
+                  - paragraph [ref=e348]: "Service: Wellness Retreat (3 days)"
+                  - paragraph [ref=e349]: "Message: First time visitor, very excited!"
+                - paragraph [ref=e350]: "Created: 11/5/2025, 11:54:48 PM"
+              - combobox [ref=e352]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e354]:
+              - generic [ref=e355]:
+                - generic [ref=e356]:
+                  - img [ref=e357]
+                  - generic [ref=e360]: Test User
+                  - generic [ref=e361]: pending
+                - generic [ref=e362]:
+                  - generic [ref=e363]:
+                    - img [ref=e364]
+                    - generic [ref=e367]: test@example.com
+                  - generic [ref=e368]:
+                    - img [ref=e369]
+                    - generic [ref=e371]: "+386123456789"
+                  - generic [ref=e372]:
+                    - img [ref=e373]
+                    - generic [ref=e375]: 2025-11-06 at 07:00
+                  - generic [ref=e376]:
+                    - img [ref=e377]
+                    - generic [ref=e382]: 2 guest(s)
+                - paragraph [ref=e384]: "Service: Yoga Class"
+                - paragraph [ref=e385]: "Created: 11/5/2025, 11:40:52 PM"
+              - combobox [ref=e387]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - generic [ref=e391]:
+                  - img [ref=e392]
+                  - generic [ref=e395]: Test User
+                  - generic [ref=e396]: pending
+                - generic [ref=e397]:
+                  - generic [ref=e398]:
+                    - img [ref=e399]
+                    - generic [ref=e402]: test@example.com
+                  - generic [ref=e403]:
+                    - img [ref=e404]
+                    - generic [ref=e406]: "+386123456789"
+                  - generic [ref=e407]:
+                    - img [ref=e408]
+                    - generic [ref=e410]: 2025-11-06 at 07:00
+                  - generic [ref=e411]:
+                    - img [ref=e412]
+                    - generic [ref=e417]: 2 guest(s)
+                - paragraph [ref=e419]: "Service: Yoga Class"
+                - paragraph [ref=e420]: "Created: 11/5/2025, 11:38:24 PM"
+              - combobox [ref=e422]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e424]:
+              - generic [ref=e425]:
+                - generic [ref=e426]:
+                  - img [ref=e427]
+                  - generic [ref=e430]: Test User
+                  - generic [ref=e431]: pending
+                - generic [ref=e432]:
+                  - generic [ref=e433]:
+                    - img [ref=e434]
+                    - generic [ref=e437]: test@example.com
+                  - generic [ref=e438]:
+                    - img [ref=e439]
+                    - generic [ref=e441]: "+386123456789"
+                  - generic [ref=e442]:
+                    - img [ref=e443]
+                    - generic [ref=e445]: 2025-11-06 at 07:00
+                  - generic [ref=e446]:
+                    - img [ref=e447]
+                    - generic [ref=e452]: 2 guest(s)
+                - paragraph [ref=e454]: "Service: Yoga Class"
+                - paragraph [ref=e455]: "Created: 11/5/2025, 11:36:24 PM"
+              - combobox [ref=e457]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e459]:
+              - generic [ref=e460]:
+                - generic [ref=e461]:
+                  - img [ref=e462]
+                  - generic [ref=e465]: Test User
+                  - generic [ref=e466]: pending
+                - generic [ref=e467]:
+                  - generic [ref=e468]:
+                    - img [ref=e469]
+                    - generic [ref=e472]: test@example.com
+                  - generic [ref=e473]:
+                    - img [ref=e474]
+                    - generic [ref=e476]: "+386123456789"
+                  - generic [ref=e477]:
+                    - img [ref=e478]
+                    - generic [ref=e480]: 2025-11-06 at 07:00
+                  - generic [ref=e481]:
+                    - img [ref=e482]
+                    - generic [ref=e487]: 2 guest(s)
+                - paragraph [ref=e489]: "Service: Yoga Class"
+                - paragraph [ref=e490]: "Created: 11/5/2025, 11:34:21 PM"
+              - combobox [ref=e492]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e494]:
+              - generic [ref=e495]:
+                - generic [ref=e496]:
+                  - img [ref=e497]
+                  - generic [ref=e500]: Test User
+                  - generic [ref=e501]: pending
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - img [ref=e504]
+                    - generic [ref=e507]: test@example.com
+                  - generic [ref=e508]:
+                    - img [ref=e509]
+                    - generic [ref=e511]: "+386123456789"
+                  - generic [ref=e512]:
+                    - img [ref=e513]
+                    - generic [ref=e515]: 2025-11-06 at 07:00
+                  - generic [ref=e516]:
+                    - img [ref=e517]
+                    - generic [ref=e522]: 2 guest(s)
+                - paragraph [ref=e524]: "Service: Yoga Class"
+                - paragraph [ref=e525]: "Created: 11/5/2025, 11:30:39 PM"
+              - combobox [ref=e527]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+            - generic [ref=e529]:
+              - generic [ref=e530]:
+                - generic [ref=e531]:
+                  - img [ref=e532]
+                  - generic [ref=e535]: Test User
+                  - generic [ref=e536]: pending
+                - generic [ref=e537]:
+                  - generic [ref=e538]:
+                    - img [ref=e539]
+                    - generic [ref=e542]: test@example.com
+                  - generic [ref=e543]:
+                    - img [ref=e544]
+                    - generic [ref=e546]: +386 123 456 789
+                  - generic [ref=e547]:
+                    - img [ref=e548]
+                    - generic [ref=e550]: 2025-12-01 at 09:00
+                  - generic [ref=e551]:
+                    - img [ref=e552]
+                    - generic [ref=e557]: 2 guest(s)
+                - generic [ref=e558]:
+                  - paragraph [ref=e559]: "Service: Yoga Class"
+                  - paragraph [ref=e560]: "Message: Test booking from automated test"
+                - paragraph [ref=e561]: "Created: 11/5/2025, 10:42:52 PM"
+              - combobox [ref=e563]:
+                - option "Pending" [selected]
+                - option "Confirmed"
+                - option "Cancelled"
+                - option "Completed"
+  - contentinfo [ref=e564]:
+    - generic [ref=e565]:
+      - generic [ref=e566]:
+        - generic [ref=e567]:
+          - img "Healthy Corner Logo" [ref=e570]
+          - paragraph [ref=e571]: Your wellness sanctuary in the heart of the Alps. Experience transformation through healthy living, yoga, and cold therapy.
+          - generic [ref=e572]:
+            - link [ref=e573]:
+              - /url: https://facebook.com
+              - img [ref=e574]
+            - link [ref=e576]:
+              - /url: https://instagram.com
+              - img [ref=e577]
+            - link [ref=e580]:
+              - /url: mailto:info@healthycorner.si
+              - img [ref=e581]
+        - generic [ref=e584]:
+          - heading "Services" [level=3] [ref=e585]
+          - list [ref=e586]:
+            - listitem [ref=e587]:
+              - link "Yoga Classes" [ref=e588]:
+                - /url: "#services"
+            - listitem [ref=e589]:
+              - link "Wim Hof Method" [ref=e590]:
+                - /url: "#services"
+            - listitem [ref=e591]:
+              - link "Ice Baths" [ref=e592]:
+                - /url: "#services"
+            - listitem [ref=e593]:
+              - link "Healthy Food" [ref=e594]:
+                - /url: "#menu"
+            - listitem [ref=e595]:
+              - link "Wellness Retreats" [ref=e596]:
+                - /url: "#services"
+        - generic [ref=e597]:
+          - heading "Quick Links" [level=3] [ref=e598]
+          - list [ref=e599]:
+            - listitem [ref=e600]:
+              - link "About Us" [ref=e601]:
+                - /url: "#about"
+            - listitem [ref=e602]:
+              - link "Schedule" [ref=e603]:
+                - /url: "#schedule"
+            - listitem [ref=e604]:
+              - link "Gallery" [ref=e605]:
+                - /url: "#gallery"
+            - listitem [ref=e606]:
+              - link "Book Now" [ref=e607]:
+                - /url: "#booking"
+            - listitem [ref=e608]:
+              - link "Contact" [ref=e609]:
+                - /url: "#contact"
+        - generic [ref=e610]:
+          - heading "Contact" [level=3] [ref=e611]
+          - list [ref=e612]:
+            - listitem [ref=e613]:
+              - img [ref=e614]
+              - generic [ref=e617]:
+                - text: Camp Menina
+                - text: Mozirje, Slovenia
+            - listitem [ref=e618]:
+              - img [ref=e619]
+              - generic [ref=e621]: +386 XX XXX XXX
+            - listitem [ref=e622]:
+              - img [ref=e623]
+              - generic [ref=e626]: info@healthycorner.si
+      - generic [ref=e628]:
+        - paragraph [ref=e629]: © 2025 Healthy Corner. All rights reserved.
+        - generic [ref=e630]:
+          - link "Privacy Policy" [ref=e631]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e632]:
+            - /url: "#"
+          - link "Cookie Policy" [ref=e633]:
+            - /url: "#"
+  - alert [ref=e634]
+```

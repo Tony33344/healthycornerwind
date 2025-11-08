@@ -36,13 +36,39 @@ export default function AdminDashboard() {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [messages, setMessages] = useState<ContactMessage[]>([]);
   const [loadingData, setLoadingData] = useState(true);
-  const [activeTab, setActiveTab] = useState<'bookings' | 'messages'>('bookings');
+  const [activeTab, setActiveTab] = useState<'bookings' | 'messages' | 'products' | 'orders'>('bookings');
 
+  // Immediately redirect if not authenticated
   useEffect(() => {
     if (!loading && !user) {
-      router.push('/login');
+      router.replace('/login');
     }
   }, [user, loading, router]);
+  
+  // Show loading state while checking auth OR redirect to login immediately
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-neutral-600">Verifying access...</p>
+        </div>
+      </div>
+    );
+  }
+  
+  // If no user after loading, show nothing and redirect happens
+  if (!user) {
+    router.replace('/login');
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-neutral-600">Redirecting to login...</p>
+        </div>
+      </div>
+    );
+  }
 
   useEffect(() => {
     if (user) {
@@ -192,26 +218,52 @@ export default function AdminDashboard() {
         {/* Tabs */}
         <div className="bg-white rounded-xl shadow-sm">
           <div className="border-b border-neutral-200">
-            <div className="flex space-x-8 px-6">
+            <div className="flex flex-wrap gap-2 mb-6">
               <button
                 onClick={() => setActiveTab('bookings')}
-                className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+                className={`px-6 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === 'bookings'
-                    ? 'border-primary text-primary'
-                    : 'border-transparent text-neutral-500 hover:text-neutral-700'
+                    ? 'bg-primary text-white'
+                    : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
                 }`}
               >
                 Bookings ({bookings.length})
               </button>
               <button
                 onClick={() => setActiveTab('messages')}
-                className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+                className={`px-6 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === 'messages'
-                    ? 'border-primary text-primary'
-                    : 'border-transparent text-neutral-500 hover:text-neutral-700'
+                    ? 'bg-primary text-white'
+                    : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
                 }`}
               >
                 Messages ({messages.length})
+              </button>
+              <button
+                onClick={() => setActiveTab('products')}
+                className={`px-6 py-3 rounded-xl font-semibold transition-all ${
+                  activeTab === 'products'
+                    ? 'bg-primary text-white'
+                    : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+                }`}
+              >
+                Products
+              </button>
+              <button
+                onClick={() => setActiveTab('orders')}
+                className={`px-6 py-3 rounded-xl font-semibold transition-all ${
+                  activeTab === 'orders'
+                    ? 'bg-primary text-white'
+                    : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+                }`}
+              >
+                Orders
+              </button>
+              <button
+                onClick={() => router.push('/admin/media')}
+                className="px-6 py-3 rounded-xl font-semibold transition-all bg-neutral-100 text-neutral-700 hover:bg-neutral-200"
+              >
+                Media Manager
               </button>
             </div>
           </div>
