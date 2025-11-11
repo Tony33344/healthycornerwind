@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #A4B82C;
+  --primary-dark: #8A9824;
+}
+
+body {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+/* Brand Typography */
+.brand-name {
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+.brand-tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
