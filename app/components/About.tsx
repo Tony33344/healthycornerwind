@@ -9,14 +9,14 @@ export default function About() {
   const t = useTranslations('about')
 
   return (
-    <section className="relative py-24 md:py-40 px-4 overflow-hidden">
+    <section className="relative py-24 md:py-40 px-4 overflow-hidden bg-neutral-50">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src={BRAND_ASSETS.aboutBg}
           alt="About Camp Menina"
           fill
-          className="object-cover opacity-10"
+          className="object-cover opacity-5"
           sizes="100vw"
         />
       </div>

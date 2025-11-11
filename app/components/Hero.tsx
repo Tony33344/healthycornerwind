@@ -10,13 +10,8 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen bg-black flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <motion.div
-        initial={{ opacity: 0, scale: 1.1 }}
-        animate={{ opacity: 0.6, scale: 1 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
-        className="absolute inset-0 z-0"
-      >
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
         <Image
           src={BRAND_ASSETS.heroBg}
           alt="Camp Menina Wellness Retreat"
@@ -26,7 +21,14 @@ export default function Hero() {
           sizes="100vw"
           quality={90}
         />
-      </motion.div>
+        {/* Dark overlay for better text readability */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.5 }}
+          transition={{ duration: 1.5 }}
+          className="absolute inset-0 bg-black"
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
