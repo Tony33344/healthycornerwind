@@ -76,7 +76,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 1.2 }}
         >
           <a
-            href="#services"
+            href="/en/services"
             className="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
           >
             {t('cta')}
