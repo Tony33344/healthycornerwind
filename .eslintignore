@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# Testing
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Environment
+.env*
+
+# Misc
+*.min.js
+*.bundle.js
+
+# IDE
+.vscode/
+.idea/

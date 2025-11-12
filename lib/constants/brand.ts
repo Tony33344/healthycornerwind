@@ -34,7 +34,7 @@ export const BRAND_ASSETS = {
   logo: '/images/logo.png',
   logoBlackBg: '/images/logo-black-bg.png',
   heroBg: '/images/hero-bg.jpg',
-  aboutBg: '/images/about-bg.jpg',
+  aboutBg: '/images/gallery/DSC_4906.JPG', // Using gallery image as about background
   brandGuide: '/images/brand-guide.png',
 } as const
 

@@ -70,6 +70,14 @@
     "send": "Pošlji sporočilo",
     "newsletter": "Naročite se na novice"
   },
+  "gallery": {
+    "label": "GALERIJA",
+    "title": "Doživite healthy corner",
+    "subtitle": "Odkrijte lepoto našega wellness retreata skozi te trenutke",
+    "allPhotos": "Vse fotografije",
+    "iceBathing": "Ledene kopeli",
+    "healthyFood": "Zdrava hrana"
+  },
   "cart": {
     "title": "Nakupovalna košarica",
     "empty": "Vaša košarica je prazna",

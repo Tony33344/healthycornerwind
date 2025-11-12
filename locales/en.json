@@ -70,6 +70,14 @@
     "send": "Send Message",
     "newsletter": "Subscribe to Newsletter"
   },
+  "gallery": {
+    "label": "GALLERY",
+    "title": "Experience healthy corner",
+    "subtitle": "Discover the beauty of our wellness retreat through these moments",
+    "allPhotos": "All Photos",
+    "iceBathing": "Ice Bathing",
+    "healthyFood": "Healthy Food"
+  },
   "cart": {
     "title": "Shopping Cart",
     "empty": "Your cart is empty",

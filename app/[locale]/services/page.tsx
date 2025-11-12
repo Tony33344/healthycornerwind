@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import { setRequestLocale } from 'next-intl/server'
 import ServiceCard from '../../components/ServiceCard'
 import ServiceFilter from '../../components/ServiceFilter'
 import { Service } from '../../types/service'
@@ -94,42 +93,48 @@ const SAMPLE_SERVICES: Service[] = [
   },
 ]
 
-export default function ServicesPage({ params: { locale } }: { params: { locale: string } }) {
+export default function ServicesPage({ params }: { params: { locale: string } }) {
   const t = useTranslations('services')
-  const [services, setServices] = useState<Service[]>(SAMPLE_SERVICES)
-  const [selectedCategory, setSelectedCategory] = useState<ServiceCategory | 'All'>('All')
-  const [loading, setLoading] = useState(false)
+  const [services, setServices] = useState<Service[]>([])
+  const [allServices, setAllServices] = useState<Service[]>([])
+  const [activeCategory, setActiveCategory] = useState<ServiceCategory | 'All'>('All')
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
-  // Filter services by category
-  const filteredServices =
-    selectedCategory === 'All'
-      ? services
-      : services.filter((service) => service.category === selectedCategory)
-
-  // Fetch services from Supabase (will work once data is seeded)
+  // Fetch services from API
   useEffect(() => {
     async function fetchServices() {
-      setLoading(true)
       try {
-        const { data, error } = await supabase
-          .from('services')
-          .select('*')
-          .eq('status', 'published')
-          .is('deleted_at', null)
-
-        if (data && data.length > 0) {
-          setServices(data as Service[])
-        }
+        setLoading(true)
+        const response = await fetch(`/api/services?locale=${params.locale}`)
+        if (!response.ok) throw new Error('Failed to fetch services')
+        
+        const result = await response.json()
+        const servicesData = result.services || SAMPLE_SERVICES
+        setAllServices(servicesData)
+        setServices(servicesData)
       } catch (err) {
-        console.log('Using sample data:', err)
+        console.error('Error fetching services:', err)
+        setError('Failed to load services')
+        // Fallback to sample data on error
+        setAllServices(SAMPLE_SERVICES)
+        setServices(SAMPLE_SERVICES)
       } finally {
         setLoading(false)
       }
     }
 
-    // Uncomment when database has data
-    // fetchServices()
-  }, [])
+    fetchServices()
+  }, [params.locale])
+
+  // Filter services based on selected category
+  useEffect(() => {
+    if (activeCategory === 'All') {
+      setServices(allServices)
+    } else {
+      setServices(allServices.filter(s => s.category === activeCategory))
+    }
+  }, [activeCategory, allServices])
 
   return (
     <main className="min-h-screen bg-neutral-50">
@@ -159,8 +164,8 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
       <section className="py-8 px-4">
         <div className="max-w-6xl mx-auto">
           <ServiceFilter
-            selectedCategory={selectedCategory}
-            onCategoryChange={setSelectedCategory}
+            selectedCategory={activeCategory}
+            onCategoryChange={setActiveCategory}
           />
         </div>
       </section>
@@ -172,10 +177,10 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
             <div className="text-center py-12">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-primary border-t-transparent" />
             </div>
-          ) : filteredServices.length > 0 ? (
+          ) : services.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredServices.map((service) => (
-                <ServiceCard key={service.id} service={service} locale={locale} />
+              {services.map((service) => (
+                <ServiceCard key={service.id} service={service} locale={params.locale} />
               ))}
             </div>
           ) : (

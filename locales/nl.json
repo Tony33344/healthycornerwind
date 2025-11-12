@@ -70,6 +70,14 @@
     "send": "Verstuur bericht",
     "newsletter": "Abonneer op nieuwsbrief"
   },
+  "gallery": {
+    "label": "GALERIJ",
+    "title": "Ervaar healthy corner",
+    "subtitle": "Ontdek de schoonheid van ons wellness retreat door deze momenten",
+    "allPhotos": "Alle foto's",
+    "iceBathing": "IJsbaden",
+    "healthyFood": "Gezond eten"
+  },
   "cart": {
     "title": "Winkelwagen",
     "empty": "Uw winkelwagen is leeg",

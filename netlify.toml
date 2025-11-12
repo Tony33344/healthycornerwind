@@ -4,10 +4,7 @@
 [build]
   # Next.js build command
   command = "npm run build"
-  # Next.js output directory
-  publish = ".next"
-  # Functions directory (for Netlify Functions if needed)
-  functions = "netlify/functions"
+  # Publish directory - let Next.js plugin handle it automatically
 
 [build.environment]
   # Node.js version
@@ -15,11 +12,8 @@
   # Next.js telemetry disabled
   NEXT_TELEMETRY_DISABLED = "1"
 
-# Redirect rules for Next.js App Router
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Next.js handles routing automatically with the plugin
+# No redirects needed
 
 # Headers for security and performance
 [[headers]]

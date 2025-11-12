@@ -70,6 +70,14 @@
     "send": "Nachricht senden",
     "newsletter": "Newsletter abonnieren"
   },
+  "gallery": {
+    "label": "GALERIE",
+    "title": "Erleben Sie healthy corner",
+    "subtitle": "Entdecken Sie die Schönheit unseres Wellness-Retreats durch diese Momente",
+    "allPhotos": "Alle Fotos",
+    "iceBathing": "Eisbaden",
+    "healthyFood": "Gesundes Essen"
+  },
   "cart": {
     "title": "Warenkorb",
     "empty": "Ihr Warenkorb ist leer",
