@@ -15,12 +15,19 @@ export default function ServiceFilter({
   const t = useTranslations('services.categories')
 
   const categories: Array<ServiceCategory | 'All'> = ['All', ...SERVICE_CATEGORIES]
+  const keyMap: Record<ServiceCategory | 'All', string> = {
+    All: 'all',
+    Yoga: 'yoga',
+    'Ice Bathing': 'iceBathing',
+    Workshops: 'workshops',
+    Packages: 'packages',
+  }
 
   return (
     <div className="flex flex-wrap gap-3 justify-center mb-12">
       {categories.map((category) => {
         const isSelected = selectedCategory === category
-        const key = category === 'All' ? 'all' : category.toLowerCase().replace(' ', '')
+        const key = keyMap[category]
 
         return (
           <button

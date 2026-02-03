@@ -10,9 +10,10 @@ import { IMAGE_SIZES } from '../../lib/constants/brand'
 interface ServiceCardProps {
   service: Service
   locale: string
+  onBook?: (service: Service) => void
 }
 
-export default function ServiceCard({ service, locale }: ServiceCardProps) {
+export default function ServiceCard({ service, locale, onBook }: ServiceCardProps) {
   const t = useTranslations('services')
 
   // Get localized name and description
@@ -103,7 +104,12 @@ export default function ServiceCard({ service, locale }: ServiceCardProps) {
         {/* Price and CTA */}
         <div className="flex items-center justify-between">
           <div className="text-3xl font-bold text-primary">{formatPrice(service.price)}</div>
-          <button className="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300">
+          <button
+            type="button"
+            onClick={() => onBook?.(service)}
+            aria-label={`${t('bookNow')} - ${name}`}
+            className="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300"
+          >
             {t('bookNow')}
           </button>
         </div>

@@ -28,6 +28,11 @@
   "services": {
     "label": "DIENSTEN",
     "title": "Wellness pakketten",
+    "meta": {
+      "title": "Wellness Diensten - Yoga, IJsbaden & Workshops",
+      "description": "Ontdek onze wellness diensten inclusief yoga sessies, ijsbad ervaringen, workshops en wellness pakketten in het Healthy Corner retreat in Slovenië.",
+      "keywords": "wellness diensten, yoga, ijsbaden, workshops, retreat, Slovenië, healthy corner, kamp menina"
+    },
     "categories": {
       "all": "Alle",
       "yoga": "Yoga",
@@ -72,11 +77,28 @@
   },
   "gallery": {
     "label": "GALERIJ",
-    "title": "Ervaar healthy corner",
-    "subtitle": "Ontdek de schoonheid van ons wellness retreat door deze momenten",
-    "allPhotos": "Alle foto's",
-    "iceBathing": "IJsbaden",
-    "healthyFood": "Gezond eten"
+    "title": "Onze Galerij",
+    "subtitle": "Ontdek mooie momenten uit onze wellness programma's",
+    "all": "Alle",
+    "featured_only": "Alleen uitgelicht",
+    "showing_results": "Toont {count} van {total} afbeeldingen",
+    "no_images": "Geen afbeeldingen",
+    "no_images_description": "Er zijn momenteel geen afbeeldingen beschikbaar om weer te geven",
+    "clear_filters": "Filters wissen",
+    "retry": "Opnieuw proberen",
+    "close": "Sluiten",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "featured": "Uitgelicht",
+    "categories": {
+      "yoga": "Yoga",
+      "ice-bathing": "IJsbaden",
+      "workshops": "Workshops",
+      "facilities": "Faciliteiten",
+      "food": "Eten",
+      "nature": "Natuur",
+      "events": "Evenementen"
+    }
   },
   "cart": {
     "title": "Winkelwagen",
@@ -84,5 +106,24 @@
     "subtotal": "Subtotaal",
     "checkout": "Afrekenen",
     "remove": "Verwijderen"
+  },
+  "booking": {
+    "bookSession": "Boek een sessie",
+    "name": "Naam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "notes": "Notities",
+    "namePlaceholder": "Vul uw naam in",
+    "emailPlaceholder": "uw.email@example.com",
+    "phonePlaceholder": "+386 XX XXX XXX",
+    "notesPlaceholder": "Aanvullende notities of voorkeuren...",
+    "termsNotice": "Door te boeken gaat u akkoord met onze voorwaarden en privacybeleid.",
+    "cancel": "Annuleren",
+    "confirmBooking": "Boeking bevestigen",
+    "booking": "Bezig met boeken...",
+    "spotsAvailable": "plaatsen beschikbaar",
+    "preferredDate": "Gewenste datum",
+    "preferredTime": "Gewenste tijd",
+    "quantity": "Aantal"
   }
 }

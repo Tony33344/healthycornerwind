@@ -5,9 +5,14 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import ServiceCard from '../../components/ServiceCard'
 import ServiceFilter from '../../components/ServiceFilter'
+import StructuredData, { 
+  generateServicesListSchema, 
+  generateBreadcrumbSchema, 
+  generateOrganizationSchema 
+} from '../../components/StructuredData'
 import { Service } from '../../types/service'
 import { ServiceCategory } from '../../../lib/constants/brand'
-import { supabase } from '../../../lib/supabase/client'
+import ServiceBookingModal from '../../components/ServiceBookingModal'
 
 // Sample data for development (will be replaced with Supabase data)
 const SAMPLE_SERVICES: Service[] = [
@@ -100,6 +105,8 @@ export default function ServicesPage({ params }: { params: { locale: string } })
   const [activeCategory, setActiveCategory] = useState<ServiceCategory | 'All'>('All')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [isBookingOpen, setIsBookingOpen] = useState(false)
+  const [selectedService, setSelectedService] = useState<Service | null>(null)
 
   // Fetch services from API
   useEffect(() => {
@@ -137,7 +144,13 @@ export default function ServicesPage({ params }: { params: { locale: string } })
   }, [activeCategory, allServices])
 
   return (
-    <main className="min-h-screen bg-neutral-50">
+    <>
+      {/* JSON-LD Structured Data */}
+      <StructuredData data={generateOrganizationSchema()} />
+      <StructuredData data={generateBreadcrumbSchema(params.locale)} />
+      <StructuredData data={generateServicesListSchema(services, params.locale)} />
+      
+      <main className="min-h-screen bg-neutral-50">
       {/* Header Section */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
@@ -180,7 +193,15 @@ export default function ServicesPage({ params }: { params: { locale: string } })
           ) : services.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service) => (
-                <ServiceCard key={service.id} service={service} locale={params.locale} />
+                <ServiceCard
+                  key={service.id}
+                  service={service}
+                  locale={params.locale}
+                  onBook={(s) => {
+                    setSelectedService(s)
+                    setIsBookingOpen(true)
+                  }}
+                />
               ))}
             </div>
           ) : (
@@ -191,5 +212,16 @@ export default function ServicesPage({ params }: { params: { locale: string } })
         </div>
       </section>
     </main>
+
+    {/* Service Booking Modal */}
+    <ServiceBookingModal
+      isOpen={isBookingOpen}
+      onClose={() => setIsBookingOpen(false)}
+      service={selectedService}
+      onComplete={() => {
+        // Placeholder for post-booking action (e.g., toast)
+      }}
+    />
+    </>
   )
 }

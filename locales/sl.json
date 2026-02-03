@@ -28,6 +28,11 @@
   "services": {
     "label": "STORITVE",
     "title": "Wellness paketi",
+    "meta": {
+      "title": "Wellness Storitve - Joga, Ledene Kopeli & Delavnice",
+      "description": "Odkrijte naše wellness storitve vključno z jožo, lednimi kopelmi, delavnicami in wellness paketi v Healthy Corner retreatu v Sloveniji.",
+      "keywords": "wellness storitve, joga, ledene kopeli, delavnice, retreat, Slovenija, healthy corner, kamp menina"
+    },
     "categories": {
       "all": "Vse",
       "yoga": "Joga",
@@ -56,33 +61,273 @@
   "schedule": {
     "label": "URNIK",
     "title": "Tedenski program",
+    "meta": {
+      "title": "Tedenski Urnik - Rezervirajte Wellness Terminate",
+      "description": "Oglejte si tedenski urnik in rezervirajte wellness termine vključno z jogo, lednimi kopelmi in delavnicami v Healthy Corner retreatu.",
+      "keywords": "tedenski urnik, wellness termini, joga, ledene kopeli, delavnice, rezervacija, healthy corner, kamp menina"
+    },
+    "description": "Oglejte si tedenski urnik in rezervirajte wellness termine v realnem času",
+    "timezone": "Časovni pas",
+    "instructions": "Kliknite na poljuben prost termin za rezervacijo vaše seanse",
+    "time": "Čas",
+    "live": "V živo",
+    "offline": "Brez povezave",
+    "retry": "Poskusi znova",
+    "noSlots": "Ni razpoložljivih terminov",
+    "noSlot": "Ni termina",
+    "spots": "mest",
+    "spotsAvailable": "prosta mesta",
+    "fullyBooked": "Polno rezervirano",
+    "yoga": "Joga",
+    "iceBathing": "Ledene kopeli",
+    "workshops": "Delavnice",
+    "packages": "Paketi",
     "availableSpots": "Prosta mesta",
     "instructor": "Inštruktor",
-    "bookSlot": "Rezerviraj termin"
+    "bookSlot": "Rezerviraj termin",
+    "bookingInfo": {
+      "title": "Informacije o rezervaciji",
+      "point1": "Rezervacije so potrjene takoj po uspešnem plačilu",
+      "point2": "Prejeli boste potrditveno e-pošto z vsemi podrobnostmi",
+      "point3": "Prosimo, pridite 10 minut pred načrtovano seanso"
+    },
+    "cancellationPolicy": {
+      "title": "Pravila preklica",
+      "point1": "Brezplačen preklic do 24 ur pred seanso",
+      "point2": "50% povračilo za preklice v 24 urah",
+      "point3": "Brez povračila za neudeležbe ali preklice istega dne"
+    },
+    "error": {
+      "title": "Ni mogoče naložiti urnika"
+    }
+  },
+  "gallery": {
+    "label": "GALERIJA",
+    "title": "Naša Galerija",
+    "subtitle": "Odkrijte čudovite trenutke iz naših wellness programov",
+    "all": "Vse",
+    "featured_only": "Samo izbrane",
+    "showing_results": "Prikazujemo {count} od {total} slik",
+    "no_images": "Ni slik",
+    "no_images_description": "Trenutno ni na voljo nobenih slik za prikaz",
+    "clear_filters": "Počisti filtre",
+    "retry": "Poskusi znova",
+    "close": "Zapri",
+    "previous": "Prejšnja",
+    "next": "Naslednja",
+    "featured": "Izbrano",
+    "categories": {
+      "yoga": "Joga",
+      "ice-bathing": "Ledene kopeli",
+      "workshops": "Delavnice",
+      "facilities": "Objekti",
+      "food": "Hrana",
+      "nature": "Narava",
+      "events": "Dogodki"
+    }
+  },
+  "booking": {
+    "title": "Rezervacija termina",
+    "service": "Storitev",
+    "date": "Datum",
+    "time": "Čas",
+    "duration": "Trajanje",
+    "price": "Cena",
+    "availableSpots": "Prosta mesta",
+    "yourDetails": "Vaši podatki",
+    "name": "Ime",
+    "email": "E-pošta",
+    "phone": "Telefon",
+    "notes": "Opombe (neobvezno)",
+    "terms": "Sprejmem pogoje uporabe in pravilnik o zasebnosti",
+    "bookNow": "Rezerviraj zdaj",
+    "booking": "Rezervacija",
+    "cancel": "Prekliči",
+    "confirm": "Potrdi",
+    "success": {
+      "title": "Rezervacija uspešna!",
+      "message": "Vaša rezervacija je bila potrjena. Prejeli boste potrditveno e-pošto."
+    },
+    "error": {
+      "title": "Napaka pri rezervaciji",
+      "message": "Prišlo je do napake. Prosimo, poskusite znova."
+    },
+    "validation": {
+      "nameRequired": "Ime je obvezno",
+      "emailRequired": "E-pošta je obvezna",
+      "emailInvalid": "E-poštni naslov ni veljaven",
+      "phoneRequired": "Telefon je obvezen",
+      "termsRequired": "Sprejem pogojev je obvezen"
+    }
   },
   "contact": {
     "label": "KONTAKT",
     "title": "Stopite v stik",
+    "subtitle": "Imate vprašanja? Z veseljem vam bomo odgovorili.",
     "name": "Ime",
     "email": "E-pošta",
     "phone": "Telefon",
     "message": "Sporočilo",
     "send": "Pošlji sporočilo",
-    "newsletter": "Naročite se na novice"
+    "newsletter": "Naročite se na novice",
+    "name_placeholder": "Vnesite vaše ime",
+    "email_placeholder": "vasa.eposta@example.com",
+    "phone_placeholder": "+386 XX XXX XXX",
+    "message_placeholder": "Opišite vaše vprašanje ali povejte, kako vam lahko pomagamo...",
+    "sending": "Pošiljam...",
+    "success": {
+      "title": "Sporočilo poslano!",
+      "message": "Hvala za vaše sporočilo. Odgovorili vam bomo v najkrajšem možnem času."
+    },
+    "privacy_notice": "Z oddajo obrazca se strinjate z obdelavo vaših osebnih podatkov v skladu z našo politiko zasebnosti.",
+    "info": {
+      "title": "Kontaktni podatki",
+      "address": "Naslov",
+      "hours": "Delovni čas"
+    },
+    "form": {
+      "title": "Pošljite nam sporočilo"
+    }
   },
-  "gallery": {
-    "label": "GALERIJA",
-    "title": "Doživite healthy corner",
-    "subtitle": "Odkrijte lepoto našega wellness retreata skozi te trenutke",
-    "allPhotos": "Vse fotografije",
-    "iceBathing": "Ledene kopeli",
-    "healthyFood": "Zdrava hrana"
+  "newsletter": {
+    "title": "Naročite se na novice",
+    "subtitle": "Bodite prvi, ki izveste o novih programih in posebnih ponudbah",
+    "email": "E-poštni naslov",
+    "email_placeholder": "vasa.eposta@example.com",
+    "subscribe": "Naroči se",
+    "subscribing": "Naročam...",
+    "success_compact": "Uspešno naročeni!",
+    "success": {
+      "title": "Uspešno naročeni!",
+      "message": "Hvala za naročilo. Poslali smo vam potrditveno e-pošto."
+    },
+    "gdpr_consent": "Strinjam se s prejemanjem novic in obdelavo mojih osebnih podatkov",
+    "gdpr_required": "Za nadaljevanje morate potrditi soglasje",
+    "privacy_notice": "Vaše podatke uporabljamo samo za pošiljanje novic. Odjava je možna kadarkoli."
+  },
+  "testimonials": {
+    "title": "Mnenja gostov",
+    "subtitle": "Kaj pravijo naši gostje o svojih izkušnjah",
+    "featured": "Izbrano",
+    "no_testimonials": "Trenutno ni na voljo nobenih mnenj",
+    "read_more": "Preberi več",
+    "show_less": "Prikaži manj",
+    "verified": "Preverjeno",
+    "categories": {
+      "yoga": "Joga",
+      "ice-bathing": "Ledene kopeli",
+      "workshops": "Delavnice",
+      "facilities": "Objekti",
+      "food": "Hrana",
+      "nature": "Narava",
+      "events": "Dogodki"
+    },
+    "rating_summary": {
+      "excellent": "Odlično",
+      "very_good": "Zelo dobro",
+      "good": "Dobro",
+      "fair": "Povprečno",
+      "poor": "Slabo"
+    }
   },
   "cart": {
     "title": "Nakupovalna košarica",
     "empty": "Vaša košarica je prazna",
+    "empty_description": "Dodajte izdelke iz našega menija, da začnete nakupovati",
     "subtotal": "Vmesna vsota",
     "checkout": "Zaključi nakup",
-    "remove": "Odstrani"
+    "remove": "Odstrani",
+    "remove_item": "Odstrani izdelek",
+    "clear_cart": "Izprazni košarico",
+    "continue_shopping": "Nadaljuj z nakupovanjem",
+    "browse_menu": "Prebrskaj meni",
+    "close": "Zapri",
+    "increase_quantity": "Povečaj količino",
+    "decrease_quantity": "Zmanjšaj količino",
+    "item_added": "Izdelek dodan v košarico",
+    "item_removed": "Izdelek odstranjen iz košarice",
+    "cart_cleared": "Košarica je bila izpraznjena"
+  },
+  "checkout": {
+    "label": "NAKUP",
+    "title": "Zaključi nakup",
+    "subtitle": "Izpolnite podatke za dokončanje naročila",
+    "customer_info": "Podatki o stranki",
+    "delivery_info": "Podatki o dostavi",
+    "payment_method": "Način plačila",
+    "order_summary": "Povzetek naročila",
+    "name": "Ime",
+    "email": "E-pošta",
+    "phone": "Telefon",
+    "name_placeholder": "Vnesite vaše ime",
+    "email_placeholder": "vasa.eposta@example.com",
+    "phone_placeholder": "+386 XX XXX XXX",
+    "delivery_type": "Vrsta dostave",
+    "pickup": "Prevzem",
+    "delivery": "Dostava",
+    "date": "Datum",
+    "time": "Čas",
+    "select_time": "Izberite čas",
+    "notes": "Opombe",
+    "notes_placeholder": "Dodatne opombe za naročilo...",
+    "cash": "Gotovina",
+    "card": "Kartica",
+    "bank_transfer": "Bančno nakazilo",
+    "total": "Skupaj",
+    "place_order": "Oddaj naročilo",
+    "processing": "Obdelujemo...",
+    "empty_cart": "Vaša košarica je prazna",
+    "empty_cart_description": "Dodajte izdelke v košarico, da nadaljujete z nakupom",
+    "browse_menu": "Prebrskaj meni",
+    "security_notice": "Vaši podatki so varni in zaščiteni",
+    "breadcrumb": {
+      "home": "Domov",
+      "menu": "Meni",
+      "checkout": "Nakup"
+    },
+    "errors": {
+      "name_required": "Ime je obvezno",
+      "email_required": "E-pošta je obvezna",
+      "email_invalid": "E-poštni naslov ni veljaven",
+      "date_required": "Datum je obvezen",
+      "time_required": "Čas je obvezen",
+      "address_required": "Naslov je obvezen",
+      "empty_cart": "Košarica je prazna",
+      "checkout_failed": "Napaka pri nakupu"
+    },
+    "success": {
+      "message": "Naročilo {orderNumber} je bilo uspešno oddano!"
+    }
+  },
+  "order_confirmation": {
+    "title": "Hvala za naročilo!",
+    "subtitle": "Vaše naročilo je bilo uspešno oddano",
+    "order_number": "Številka naročila",
+    "status": "Status",
+    "customer_info": "Podatki o stranki",
+    "delivery_info": "Podatki o dostavi",
+    "order_items": "Naročeni izdelki",
+    "payment_info": "Podatki o plačilu",
+    "next_steps": "Naslednji koraki",
+    "name": "Ime",
+    "email": "E-pošta",
+    "phone": "Telefon",
+    "type": "Vrsta",
+    "pickup": "Prevzem",
+    "delivery": "Dostava",
+    "date_time": "Datum in čas",
+    "notes": "Opombe",
+    "quantity": "Količina",
+    "total": "Skupaj",
+    "cash": "Gotovina",
+    "card": "Kartica",
+    "bank_transfer": "Bančno nakazilo",
+    "step_1": "Prejeli boste e-poštno potrditev naročila",
+    "step_2": "Pripravili bomo vaše naročilo",
+    "step_3": "Obvestili vas bomo, ko bo pripravljeno",
+    "order_again": "Naroči znova",
+    "back_to_home": "Nazaj na domov",
+    "order_not_found": "Naročilo ni najdeno",
+    "order_not_found_description": "Naročilo s to številko ne obstaja ali je bilo odstranjeno"
   }
 }

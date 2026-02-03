@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Newsletter from '../components/Newsletter'
 import { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
 
@@ -19,9 +20,10 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   setRequestLocale(locale)
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <Hero />
       <About />
-    </main>
+      <Newsletter />
+    </div>
   )
 }

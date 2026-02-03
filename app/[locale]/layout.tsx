@@ -3,7 +3,9 @@ import { getMessages, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+import { CartProvider } from '../context/CartContext'
 import '../globals.css'
+import HtmlLang from '../components/HtmlLang'
 
 const locales = ['sl', 'nl', 'en', 'de']
 
@@ -21,22 +23,20 @@ export default async function LocaleLayout({
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale as any)) notFound()
 
-  // Enable static rendering
+  // Enable static rendering for this locale
   setRequestLocale(locale)
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  // Load localized messages
   const messages = await getMessages()
 
   return (
-    <html lang={locale}>
-      <body className="font-sans antialiased">
-        <NextIntlClientProvider messages={messages}>
-          <Navigation />
-          <div className="pt-16">{children}</div>
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <CartProvider>
+        <HtmlLang locale={locale} />
+        <Navigation />
+        <main className="pt-16 relative z-0">{children}</main>
+        <Footer />
+      </CartProvider>
+    </NextIntlClientProvider>
   )
 }

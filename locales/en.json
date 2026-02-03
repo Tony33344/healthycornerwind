@@ -1,10 +1,21 @@
 {
   "common": {
     "brandName": "healthy corner",
-    "tagline": "ALPSKI ZDRAVILIŠKI KAMP",
+    "tagline": "ALPINE WELLNESS CAMP",
     "loading": "Loading...",
     "error": "An error occurred",
-    "success": "Success!"
+    "success": "Success!",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset"
   },
   "nav": {
     "home": "Home",
@@ -28,6 +39,11 @@
   "services": {
     "label": "SERVICES",
     "title": "Wellness Packages",
+    "meta": {
+      "title": "Wellness Services - Yoga, Ice Bathing & Workshops",
+      "description": "Discover our wellness services including yoga sessions, ice bathing experiences, workshops, and wellness packages at Healthy Corner retreat in Slovenia.",
+      "keywords": "wellness services, yoga, ice bathing, workshops, retreat, Slovenia, healthy corner, camp menina"
+    },
     "categories": {
       "all": "All",
       "yoga": "Yoga",
@@ -55,34 +71,259 @@
   },
   "schedule": {
     "label": "SCHEDULE",
-    "title": "Weekly Activities",
+    "title": "Weekly Schedule",
+    "meta": {
+      "title": "Weekly Schedule - Book Your Wellness Sessions",
+      "description": "View and book weekly wellness sessions including yoga, ice bathing, and workshops at Healthy Corner retreat.",
+      "keywords": "weekly schedule, wellness sessions, yoga, ice bathing, workshops, booking, healthy corner, camp menina"
+    },
+    "description": "View our weekly schedule and book your wellness sessions in real-time",
+    "timezone": "Timezone",
+    "instructions": "Click on any available time slot to book your session",
+    "time": "Time",
+    "live": "Live",
+    "offline": "Offline",
+    "retry": "Retry",
+    "noSlots": "No sessions available",
+    "noSlot": "No session",
+    "spots": "spots",
+    "spotsAvailable": "spots available",
+    "fullyBooked": "Fully Booked",
+    "yoga": "Yoga",
+    "iceBathing": "Ice Bathing",
+    "workshops": "Workshops",
+    "packages": "Packages",
+    "bookingInfo": {
+      "title": "Booking Information",
+      "point1": "Bookings are confirmed instantly upon successful payment",
+      "point2": "You will receive a confirmation email with all details",
+      "point3": "Please arrive 10 minutes before your scheduled session"
+    },
+    "cancellationPolicy": {
+      "title": "Cancellation Policy",
+      "point1": "Free cancellation up to 24 hours before the session",
+      "point2": "50% refund for cancellations within 24 hours",
+      "point3": "No refund for no-shows or same-day cancellations"
+    },
+    "error": {
+      "title": "Unable to Load Schedule"
+    },
     "availableSpots": "Available Spots",
     "instructor": "Instructor",
     "bookSlot": "Book This Slot"
   },
+  "gallery": {
+    "label": "GALLERY",
+    "title": "Our Gallery",
+    "subtitle": "Discover beautiful moments from our wellness programs",
+    "all": "All",
+    "featured_only": "Featured only",
+    "showing_results": "Showing {count} of {total} images",
+    "no_images": "No images",
+    "no_images_description": "No images are currently available for display",
+    "clear_filters": "Clear filters",
+    "retry": "Try again",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "featured": "Featured",
+    "categories": {
+      "yoga": "Yoga",
+      "ice-bathing": "Ice Bathing",
+      "workshops": "Workshops",
+      "facilities": "Facilities",
+      "food": "Food",
+      "nature": "Nature",
+      "events": "Events"
+    }
+  },
+  "testimonials": {
+    "title": "Guest Reviews",
+    "subtitle": "What our guests say about their experiences",
+    "featured": "Featured",
+    "no_testimonials": "No reviews available",
+    "read_more": "Read more",
+    "show_less": "Show less",
+    "verified": "Verified",
+    "categories": {
+      "yoga": "Yoga",
+      "ice-bathing": "Ice Bathing",
+      "workshops": "Workshops",
+      "facilities": "Facilities",
+      "food": "Food",
+      "nature": "Nature",
+      "events": "Events"
+    },
+    "rating_summary": {
+      "excellent": "Excellent",
+      "very_good": "Very Good",
+      "good": "Good",
+      "fair": "Fair",
+      "poor": "Poor"
+    }
+  },
   "contact": {
     "label": "CONTACT",
     "title": "Get in Touch",
+    "subtitle": "Have questions? We'd love to hear from you.",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
     "message": "Message",
     "send": "Send Message",
-    "newsletter": "Subscribe to Newsletter"
+    "newsletter": "Subscribe to Newsletter",
+    "name_placeholder": "Enter your name",
+    "email_placeholder": "your.email@example.com",
+    "phone_placeholder": "+386 XX XXX XXX",
+    "message_placeholder": "Describe your question or tell us how we can help...",
+    "sending": "Sending...",
+    "success": {
+      "title": "Message Sent!",
+      "message": "Thank you for your message. We'll get back to you as soon as possible."
+    },
+    "privacy_notice": "By submitting this form, you agree to the processing of your personal data in accordance with our privacy policy.",
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "hours": "Opening Hours"
+    },
+    "form": {
+      "title": "Send us a Message"
+    }
   },
-  "gallery": {
-    "label": "GALLERY",
-    "title": "Experience healthy corner",
-    "subtitle": "Discover the beauty of our wellness retreat through these moments",
-    "allPhotos": "All Photos",
-    "iceBathing": "Ice Bathing",
-    "healthyFood": "Healthy Food"
+  "newsletter": {
+    "title": "Subscribe to Newsletter",
+    "subtitle": "Be the first to know about new programs and special offers",
+    "email": "Email Address",
+    "email_placeholder": "your.email@example.com",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success_compact": "Successfully subscribed!",
+    "success": {
+      "title": "Successfully Subscribed!",
+      "message": "Thank you for subscribing. We've sent you a confirmation email."
+    },
+    "gdpr_consent": "I agree to receive newsletters and processing of my personal data",
+    "gdpr_required": "You must confirm consent to continue",
+    "privacy_notice": "We only use your data for sending newsletters. You can unsubscribe at any time."
   },
   "cart": {
     "title": "Shopping Cart",
     "empty": "Your cart is empty",
+    "empty_description": "Add items from our menu to start shopping",
     "subtotal": "Subtotal",
     "checkout": "Checkout",
-    "remove": "Remove"
+    "remove": "Remove",
+    "remove_item": "Remove item",
+    "clear_cart": "Clear cart",
+    "continue_shopping": "Continue shopping",
+    "browse_menu": "Browse menu",
+    "close": "Close",
+    "increase_quantity": "Increase quantity",
+    "decrease_quantity": "Decrease quantity",
+    "item_added": "Item added to cart",
+    "item_removed": "Item removed from cart",
+    "cart_cleared": "Cart has been cleared"
+  },
+  "checkout": {
+    "label": "CHECKOUT",
+    "title": "Checkout",
+    "subtitle": "Complete your order details",
+    "customer_info": "Customer Information",
+    "delivery_info": "Delivery Information",
+    "payment_method": "Payment Method",
+    "order_summary": "Order Summary",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "name_placeholder": "Enter your name",
+    "email_placeholder": "your.email@example.com",
+    "phone_placeholder": "+386 XX XXX XXX",
+    "delivery_type": "Delivery Type",
+    "pickup": "Pickup",
+    "delivery": "Delivery",
+    "date": "Date",
+    "time": "Time",
+    "select_time": "Select time",
+    "notes": "Notes",
+    "notes_placeholder": "Additional notes for your order...",
+    "cash": "Cash",
+    "card": "Card",
+    "bank_transfer": "Bank Transfer",
+    "total": "Total",
+    "place_order": "Place Order",
+    "processing": "Processing...",
+    "empty_cart": "Your cart is empty",
+    "empty_cart_description": "Add items to cart to continue with checkout",
+    "browse_menu": "Browse Menu",
+    "security_notice": "Your data is safe and secure",
+    "breadcrumb": {
+      "home": "Home",
+      "menu": "Menu",
+      "checkout": "Checkout"
+    },
+    "errors": {
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "date_required": "Date is required",
+      "time_required": "Time is required",
+      "address_required": "Address is required",
+      "empty_cart": "Cart is empty",
+      "checkout_failed": "Checkout failed"
+    },
+    "success": {
+      "message": "Order {orderNumber} has been successfully placed!"
+    }
+  },
+  "order_confirmation": {
+    "title": "Thank you for your order!",
+    "subtitle": "Your order has been successfully placed",
+    "order_number": "Order Number",
+    "status": "Status",
+    "customer_info": "Customer Information",
+    "delivery_info": "Delivery Information",
+    "order_items": "Order Items",
+    "payment_info": "Payment Information",
+    "next_steps": "Next Steps",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "type": "Type",
+    "pickup": "Pickup",
+    "delivery": "Delivery",
+    "date_time": "Date and Time",
+    "notes": "Notes",
+    "quantity": "Quantity",
+    "total": "Total",
+    "cash": "Cash",
+    "card": "Card",
+    "bank_transfer": "Bank Transfer",
+    "step_1": "You will receive an email confirmation of your order",
+    "step_2": "We will prepare your order",
+    "step_3": "We will notify you when it's ready",
+    "order_again": "Order Again",
+    "back_to_home": "Back to Home",
+    "order_not_found": "Order Not Found",
+    "order_not_found_description": "The order with this number does not exist or has been removed"
+  },
+  "booking": {
+    "bookSession": "Book a session",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "notes": "Notes",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "your.email@example.com",
+    "phonePlaceholder": "+386 XX XXX XXX",
+    "notesPlaceholder": "Additional notes or preferences...",
+    "termsNotice": "By booking, you agree to our terms and privacy policy.",
+    "cancel": "Cancel",
+    "confirmBooking": "Confirm Booking",
+    "booking": "Booking...",
+    "spotsAvailable": "spots available",
+    "preferredDate": "Preferred date",
+    "preferredTime": "Preferred time",
+    "quantity": "Quantity"
   }
 }

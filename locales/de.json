@@ -28,6 +28,11 @@
   "services": {
     "label": "DIENSTLEISTUNGEN",
     "title": "Wellness-Pakete",
+    "meta": {
+      "title": "Wellness-Dienstleistungen - Yoga, Eisbaden & Workshops",
+      "description": "Entdecken Sie unsere Wellness-Dienstleistungen einschließlich Yoga-Sitzungen, Eisbaderlebnissen, Workshops und Wellness-Paketen im Healthy Corner Retreat in Slowenien.",
+      "keywords": "Wellness-Dienstleistungen, Yoga, Eisbaden, Workshops, Retreat, Slowenien, Healthy Corner, Camp Menina"
+    },
     "categories": {
       "all": "Alle",
       "yoga": "Yoga",
@@ -55,10 +60,38 @@
   },
   "schedule": {
     "label": "ZEITPLAN",
-    "title": "Wöchentliche Aktivitäten",
-    "availableSpots": "Verfügbare Plätze",
-    "instructor": "Instruktor",
-    "bookSlot": "Diesen Zeitslot buchen"
+    "title": "Wöchentlicher Zeitplan",
+    "description": "Sehen Sie sich unseren wöchentlichen Zeitplan an und buchen Sie Ihre Wellness-Sitzungen in Echtzeit",
+    "timezone": "Zeitzone",
+    "instructions": "Klicken Sie auf einen verfügbaren Zeitplatz, um Ihre Sitzung zu buchen",
+    "time": "Zeit",
+    "live": "Live",
+    "offline": "Offline",
+    "retry": "Wiederholen",
+    "noSlots": "Keine Sitzungen verfügbar",
+    "noSlot": "Keine Sitzung",
+    "spots": "Plätze",
+    "spotsAvailable": "Plätze verfügbar",
+    "fullyBooked": "Ausgebucht",
+    "yoga": "Yoga",
+    "iceBathing": "Eisbaden",
+    "workshops": "Workshops",
+    "packages": "Pakete",
+    "bookingInfo": {
+      "title": "Buchungsinformationen",
+      "point1": "Buchungen werden nach erfolgreicher Zahlung sofort bestätigt",
+      "point2": "Sie erhalten eine Bestätigungs-E-Mail mit allen Details",
+      "point3": "Bitte kommen Sie 10 Minuten vor Ihrer gebuchten Sitzung"
+    },
+    "cancellationPolicy": {
+      "title": "Stornierungsrichtlinie",
+      "point1": "Kostenlose Stornierung bis 24 Stunden vor der Sitzung",
+      "point2": "50% Rückerstattung bei Stornierung innerhalb von 24 Stunden",
+      "point3": "Keine Rückerstattung bei Nichterscheinen oder Stornierung am selben Tag"
+    },
+    "error": {
+      "title": "Zeitplan kann nicht geladen werden"
+    }
   },
   "contact": {
     "label": "KONTAKT",
@@ -72,11 +105,28 @@
   },
   "gallery": {
     "label": "GALERIE",
-    "title": "Erleben Sie healthy corner",
-    "subtitle": "Entdecken Sie die Schönheit unseres Wellness-Retreats durch diese Momente",
-    "allPhotos": "Alle Fotos",
-    "iceBathing": "Eisbaden",
-    "healthyFood": "Gesundes Essen"
+    "title": "Unsere Galerie",
+    "subtitle": "Entdecken Sie schöne Momente aus unseren Wellness-Programmen",
+    "all": "Alle",
+    "featured_only": "Nur Highlights",
+    "showing_results": "Zeige {count} von {total} Bildern",
+    "no_images": "Keine Bilder",
+    "no_images_description": "Derzeit sind keine Bilder zur Anzeige verfügbar",
+    "clear_filters": "Filter löschen",
+    "retry": "Erneut versuchen",
+    "close": "Schließen",
+    "previous": "Vorherige",
+    "next": "Nächste",
+    "featured": "Highlight",
+    "categories": {
+      "yoga": "Yoga",
+      "ice-bathing": "Eisbaden",
+      "workshops": "Workshops",
+      "facilities": "Einrichtungen",
+      "food": "Essen",
+      "nature": "Natur",
+      "events": "Veranstaltungen"
+    }
   },
   "cart": {
     "title": "Warenkorb",
@@ -84,5 +134,24 @@
     "subtotal": "Zwischensumme",
     "checkout": "Zur Kasse",
     "remove": "Entfernen"
+  },
+  "booking": {
+    "bookSession": "Termin buchen",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "notes": "Notizen",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "emailPlaceholder": "ihre.email@example.com",
+    "phonePlaceholder": "+386 XX XXX XXX",
+    "notesPlaceholder": "Zusätzliche Hinweise oder Wünsche...",
+    "termsNotice": "Mit der Buchung stimmen Sie unseren Bedingungen und der Datenschutzerklärung zu.",
+    "cancel": "Abbrechen",
+    "confirmBooking": "Buchung bestätigen",
+    "booking": "Buchung...",
+    "spotsAvailable": "Plätze verfügbar",
+    "preferredDate": "Bevorzugtes Datum",
+    "preferredTime": "Bevorzugte Uhrzeit",
+    "quantity": "Menge"
   }
 }

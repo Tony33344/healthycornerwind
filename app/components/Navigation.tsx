@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import { BRAND_TEXT } from '../../lib/constants/brand'
+import CartIcon from './CartIcon'
+import LanguageToggle from './LanguageToggle'
 
 export default function Navigation() {
   const t = useTranslations('nav')
@@ -46,37 +48,22 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Language Switcher */}
-          <div className="flex items-center gap-2">
-            <Link
-              href="/sl"
-              className={`px-3 py-1 rounded ${locale === 'sl' ? 'bg-primary text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
-            >
-              SL
-            </Link>
-            <Link
-              href="/nl"
-              className={`px-3 py-1 rounded ${locale === 'nl' ? 'bg-primary text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
-            >
-              NL
-            </Link>
-            <Link
-              href="/en"
-              className={`px-3 py-1 rounded ${locale === 'en' ? 'bg-primary text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
-            >
-              EN
-            </Link>
-            <Link
-              href="/de"
-              className={`px-3 py-1 rounded ${locale === 'de' ? 'bg-primary text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
-            >
-              DE
-            </Link>
+          {/* Right Side Actions */}
+          <div className="flex items-center gap-4">
+            {/* Cart Icon */}
+            <CartIcon className="text-neutral-700 hover:text-lime-600" />
+            
+            {/* Language Toggle */}
+            <LanguageToggle variant="compact" className="hidden md:block" />
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button 
+            className="md:hidden p-2"
+            aria-label="Open mobile menu"
+            aria-expanded="false"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

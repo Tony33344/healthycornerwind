@@ -1,17 +1,25 @@
-import createMiddleware from 'next-intl/middleware'
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['sl', 'nl', 'en', 'de'],
+export async function middleware(request: NextRequest) {
+  // Lightweight admin guard based on a browser cookie that is set
+  // after a successful Supabase admin login in the client.
+  const adminCookie = request.cookies.get('hc_admin')?.value
 
-  // Used when no locale matches
-  defaultLocale: 'en',
+  if (!adminCookie || adminCookie !== '1') {
+    return NextResponse.redirect(new URL('/admin/login', request.url))
+  }
 
-  // Automatically detect user's locale
-  localeDetection: true,
-})
+  return NextResponse.next()
+}
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(sl|nl|en|de)/:path*'],
+  matcher: [
+    '/admin/dashboard/:path*',
+    '/admin/services/:path*',
+    '/admin/menu/:path*',
+    '/admin/bookings/:path*',
+    '/admin/gallery/:path*',
+    '/admin/schedule/:path*'
+  ]
 }
